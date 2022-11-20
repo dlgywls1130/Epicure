@@ -3,6 +3,7 @@
     --main-text-color:#C99034;
     --gray-text-color:#939394;
     --gray-bg-color:#262728;
+    accent-color: #262728;
 }
 
 @font-face {
@@ -712,4 +713,241 @@ left:0;
 
 .footer_menu li:last-child::after{
     content: "";
+}
+
+/* ======================================= login =========================================== */
+
+#login{
+    background-color: var(--gray-bg-color);
+    position: relative;
+}
+
+.login{
+    background-color: var(--gray-bg-color);
+    position: relative;
+    height: 672px;
+    width: 100%;
+}
+
+.login_content{
+    width:523px;
+    /* height: 431px; */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../img/black-marble-textures-plain\ 1.png);
+    -webkit-box-shadow: 0px 1px 12px 7px rgba(0,0,0,0.85); 
+    box-shadow: 0px 1px 12px 7px rgba(0,0,0,0.85);  
+
+}
+
+.login_main{
+    margin:2.595rem auto; 
+    max-width: 374px;
+}
+
+
+#login-form > input{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    background: #262728;
+    border: 1px solid #5A5A5A;
+    box-shadow: 0px 0px 83.0443px rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    color: #D7D7D7;
+}
+
+
+
+
+#login-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}
+
+s
+
+#login-form > input::placeholder{
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #5B5B5B;
+}
+
+#login-form > input:focus{
+    border-color: #BE8E30;
+    outline: none;
+}
+
+.remember-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.remember-check .sign_up{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.remember-check .sign_up .singn_up_link{
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: right;
+color: #919191;
+}
+
+.remember-check .sign_up .id_find_link{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #909090;
+    }
+
+
+.submit{
+background: #3A3A3A;
+box-shadow: 0px 0px 83.0443px rgba(0, 0, 0, 0.4);
+border-radius: 1px;
+width: 374px;
+height: 50px;
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #BE8E30;
+margin: 38.8px auto 11.8px;
+    justify-content: center;
+}
+
+.check_input{
+    display: flex;
+    align-items: center;
+}
+
+.chk_box { 
+    display: block; 
+    position: relative; 
+    padding-left: 30px; 
+    cursor: pointer; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    font-family: 'Pretendard';  
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #919191;
+
+}
+
+/* 기본 체크박스 숨기기 */
+.chk_box input[type="checkbox"] { 
+    display: none; 
+}
+
+/* 선택되지 않은 체크박스 스타일 꾸미기 */
+.on { 
+    width: 20px; 
+    height: 20px; 
+    background: #262728; 
+    position: absolute; 
+    top: -4px; 
+    left: 0; 
+    border:1px solid #909090;
+}
+
+/* 선택된 체크박스 스타일 꾸미기 */
+.chk_box input[type="checkbox"]:checked + .on { 
+    background: #787676 }
+
+.on:after {
+    content: ""; 
+    position: absolute; 
+    display: none; 
+}
+
+.chk_box input[type="checkbox"]:checked + .on:after {
+    display: block; 
+}
+
+.on:after { 
+    width: 6px; 
+    height: 10px; 
+    border: solid #fff; 
+    border-width: 0 2px 2px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+    position: absolute; 
+    left: 6px; 
+    top: 2px; 
+}
+
+.login_sns{
+    border-top: 1px solid rgba(190, 142, 48, 0.4);
+}
+
+.simple_login_title{
+    font-family: 'Pretendard';
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #B5B5B5;
+justify-content: center;
+margin-top:16px;
+}
+
+.simple_login_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:18px auto 27px;
+}
+
+.simple_login_img li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DCDDDD;
+    border: 1px solid #404040;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simple_login_img li:last-child{
+    margin-right: 0;
 }

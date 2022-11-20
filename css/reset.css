@@ -51,3 +51,8 @@ table {
 a{
     text-decoration-line: none;
 }
+
+button{
+	outline: none;
+	border:none;
+}
