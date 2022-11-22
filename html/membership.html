@@ -12,73 +12,172 @@
 </head>
 <body>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'private')">개인회원</button>
-        <button class="tablinks" onclick="openCity(event, 'business')">맛집회원</button>
-    </div>
-    <div id="private" class="tabcontent">
-        <div class="title">STEP1. 회원정보 입력</div>
-        <div class="membership_content">
-            <ul class="membership">
-                <li class="name">이름</li>
-                <li><input type="text" name="name"></li>
-            </ul>
-            <ul class="membership">
-                <li class="name">이메일</li>
-                <li><input type="email" name="email"></li>
-            </ul>
-            <ul class="membership">
-                <li class="name">비밀번호</li>
-                <li><input type="password" name="password"></li>
-            </ul>
-            <ul class="membership">
-                <li class="name">비밀번호 확인</li>
-                <li><input type="password" name="passworldcheck"></li>
-            </ul>
-            <ul class="membership">
-                <li class="name">전화번호</li>
-                <li><input type="tel" name="call"></li>
-            </ul>
-            <ul class="membership">
-                <li class="name">휴대전화</li>
-                <li><input type="tel" name="phone"></li>
-            </ul>
-            <ul class="membership">
-                <li class="name">주소</li>
-                <li><input type="text" name="adress"></li>
-            </ul>
-
-        </div>
-        <div class="login_sns">
-            <div class="simple_login">
-                <div class="simple_login_title">간편로그인</div>
-                <ul class="simple_login_img">
+    <header>
+        <!-- navbar -->
+            <nav id="navbar">
+                <ul class="navbar">
                     <li>
-                        <a href="javascript:void(0)" class="simple_login_logo">
-                            <img src="../img/google.png" alt="google">
-                        </a>
+                        <img src="../img/menu.png" alt="menu">
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="simple_login_logo">
-                            <img src="../img/naver.png" alt="naver">
-                        </a>
+                        <img src="../img/logo.png" alt="logo">
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="simple_login_logo">
-                            <img src="../img/kakao.png" alt="kakao">
-                        </a></li>
-                    <li>
-                        <a href="javascript:void(0)" class="simple_login_logo">
-                            <img src="../img/facebook.png" alt="facebook">
-                        </a></li>
+                        <ul class="navbar_right">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/search.png" alt="search">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/login.png" alt="login">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/notice.png" alt="notice">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+            </nav>
+    
+    </header>
+
+<section id="membership">
+
+    <!-- top banner -->
+    <div class="top_banner">
+        <img src="../img/banner_logo.png" alt="banner_logo">
+        <div class="banner_text">
+            반갑습니다!
+            <br>지금 에피큐어에 가입하고
+            <br><span>3,401</span>곳의 맛집 정보를 확인하세요!
+        </div>
+    </div>
+    <div class="join_content">
+        <ul class="tab-container">
+            <li class="tab-container__item active" data-tab="tab1">
+                <a class="tab-container__item--title" href="#">개인회원</a>
+            </li>
+            <li class="tab-container__item" data-tab="tab2">
+                <a class="tab-container__item--title" href="#">맛집회원</a>
+            </li>
+        </ul>
+
+        <div class="content-container">
+            <div id="tab1" class="content-container__content target">
+                <div class="title">STEP1. 회원정보 입력</div>
+                <div class="membership_content">
+                    <div class="infomation">
+                        <ul class="membership">
+                            <li class="name">이름</li>
+                            <li class="input_answer"><input type="text" name="name"></li>
+                        </ul>
+                        <ul class="membership">
+                            <li class="name">이메일</li>
+                            <li class="input_answer"><input type="email" name="email"></li>
+                        </ul>
+                        <ul class="membership">
+                            <li class="name">비밀번호</li>
+                            <li class="input_answer"><input type="password" name="password"></li>
+                        </ul>
+                        <ul class="membership">
+                            <li class="name">비밀번호 확인</li>
+                            <li class="input_answer"><input type="password" name="passworldcheck"></li>
+                        </ul>
+                        <ul class="membership">
+                            <li class="name">전화번호</li>
+                            <li class="input_answer"><input type="tel" name="call"></li>
+                        </ul>
+                        <ul class="membership">
+                            <li class="name">휴대전화</li>
+                            <li class="input_answer"><input type="tel" name="phone"></li>
+                        </ul>
+                        <ul class="membership">
+                            <li class="name">주소</li>
+                            <li class="input_answer"><input type="text" name="adress"></li>
+                        </ul>
+                    </div>
+
+        
+                </div>
+                <div class="login_sns">
+                    <div class="simple_login">
+                        <div class="simple_login_title">간편로그인</div>
+                        <ul class="simple_login_img">
+                            <li>
+                                <a href="javascript:void(0)" class="simple_login_logo">
+                                    <img src="../img/google.png" alt="google">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="simple_login_logo">
+                                    <img src="../img/naver.png" alt="naver">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="simple_login_logo">
+                                    <img src="../img/kakao.png" alt="kakao">
+                                </a></li>
+                            <li>
+                                <a href="javascript:void(0)" class="simple_login_logo">
+                                    <img src="../img/facebook.png" alt="facebook">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="tab2" class="content-container__content">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
             </div>
         </div>
     </div>
-
-    <div id="business" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p> 
+    
+    <div class="bottom_bg">
     </div>
+</section>
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer_logo">
+                <img src="../img/logo.png" alt="logo">
+            </div>
+            <p class="copyright">Copyright ®  네오비즈 All Rights Reserved.</p>
+            <div class="footer_bottom">
+                <ul class="footer_description">
+                    <li class="name">
+                        <p>네오비즈설립일 : 2002년 12월 2일</p>
+                        <p>대표: 최유식</p>
+                        <p>개인정보책임자 : 박기향</p>
+                    </li>
+                    <li class="adress">
+                        <p>주소 : 경기도 고양시 일산서구 가좌1로10 512-1301</p>
+                        <p>사업자등록번호 : 210-09-30249 통신판매업신고 : 제 959호</p>
+                        <p>대표전화 : 070-8724-6001</p>
+                    </li>
+                </ul>
+                <ul class="footer_menu">
+                    <li><a href="javascript:void(0);">개인정보 취급 방침</a></li>
+                    <li><a href="javascript:void(0);">1:1 메일상담</a></li>
+                    <li><a href="javascript:void(0);">로그인</a></li>
+                    <li><a href="javascript:void(0);">회원가입</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -915,6 +915,7 @@ margin: 38.8px auto 11.8px;
 
 .login_sns{
     border-top: 1px solid rgba(190, 142, 48, 0.4);
+    margin-top: 43px;
 }
 
 .simple_login_title{
@@ -954,48 +955,149 @@ margin-top:16px;
 
 
 /* membership */
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
 
-.tabcontent .title{
+.tab-container {
+    display: flex;
+}
+.tab-container__item {
+cursor: pointer;
+}
+.tab-container__item:hover {
+background-color:  #BE8E30;
+transition: background-color 0.4s ease-in-out;
+}
+.tab-container__item:hover .tab-container__item--title {
+color: #262728;
+transition: color 0.4s ease-in-out;
+}
+.tab-container__item.active {
+background-color: #BE8E30;
+}
+.tab-container__item.active .tab-container__item--title {
+    color: #262728;
+}
+.tab-container__item.active:hover {
+background-color:  #BE8E30;
+transition: background-color 0.4s ease-in-out;
+}
+.tab-container__item.active:hover .tab-container__item--title {
+color: #262728;
+transition: color 0.4s ease-in-out;
+}
+.tab-container__item--title {
+display: inline-block;
+color:  #BE8E30;
+font-weight: 700;
+text-decoration: none;
+margin: 15px;
+}
+
+.content-container__content {
+display: none;
+}
+.content-container__content.target {
+display: block;
+}
+
+
+
+#membership{
+    background-color:#262728 ;
+}
+
+.top_banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    padding: 87px 0 89px;
+}
+
+.top_banner img{
+    width: 157px;
+    height: 122px;
+}
+
+.top_banner .banner_text{
     font-family: 'Pretendard';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #BE8E30;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126%;
+    color: #C99034;
+}
+
+.top_banner .banner_text span{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.join_content{
+    width: 719px;
+    background: #262728;
+    border: 1px solid #BE8E30;
+    box-shadow: 0px 0px 83.0443px rgba(0, 0, 0, 0.4);
+    border-radius: 0.830443px;
+    margin: 0 auto;
+}
+
+.bottom_bg{
+    background: url('../img/bottom_bg.png') center/cover no-repeat;
+    width: 100%;
+}
+
+.content-container .title{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BE8E30;
+    position:relative;
+    padding: 0 10px;
+    margin: 50px 16px 20px;
+}
+
+.content-container .title::before{
+    position:absolute;
+    left: 0;
+    content: "";
+    width: 3px;
+    height: 15px;
+    display: block;
+    top: 2px;
+    background-color: #BE8E30;
+}
+
+.membership_content{
+    padding:0 37px;
+}
+
+.membership{ 
+    display: flex;
+    border-top: 1px solid rgba(190, 142, 48, 0.4);
+    border-bottom: 1px solid rgba(190, 142, 48, 0.4);
+    align-items: center;
+}
+
+.membership .name{
+    background: rgba(255, 255, 255, 0.03);
+    color:#fff;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    flex: 0 0 24%;
+    padding: 14px 20px;
+}
+
+.membership .input_answer{
+    padding:10px 17px;
+
+}
+
+.membership input{
+    background-color: transparent;
+    border:1px solid #5A5A5A;
+    height: 24px;
 }
