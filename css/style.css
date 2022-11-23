@@ -172,6 +172,59 @@ z-index: 2;
     margin-right: 0;
 }
 
+
+/* 메뉴 */
+
+.menu{
+  position: relative;
+}
+
+.menu_list{
+  width: 1400px;
+  margin: 0 auto;
+  background: #262728;
+  border: 1px solid #C99034;
+  box-shadow: 0px 0px 100px rgb(0 0 0 / 40%);
+  border-radius: 1px;
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.menu_list ul{
+  padding:34px 34px;
+  position: relative;
+}
+
+.main_menu_title{
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #C99034;
+  margin: 36px 34px;
+}
+
+.main_menu_title.active{
+  background: #C99034;
+  width: 127px;
+  height: 37px;
+  position: absolute;
+  left: -14px;
+  top: 0;
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262728;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* main */
 
 #main{
@@ -182,9 +235,9 @@ z-index: 2;
 .pages {
     display: flex;
     width: 300%;
-    box-sizing: border-box;	
+    box-sizing: border-box;
 }
-  
+
 .page {
     width: 100%;
     height: 100vh;
@@ -262,7 +315,7 @@ z-index: 2;
 .main.gold .main_img3{
     width: 439.79px;
     height: 442.79px;
-} 
+}
 
 .main.gold .main_img3 img{
     position: absolute;
@@ -321,7 +374,7 @@ left:0;
 .main.blue .main_img2{
     width: 174px;
     height:115px;
-    
+
 }
 
 .main.blue .main_img2 img{
@@ -390,15 +443,15 @@ left:0;
     margin: 0 0 1rem 4rem;
 }
 
-.main.green .main_img1 img{ 
+.main.green .main_img1 img{
     bottom:55px;
-    position: absolute;   
+    position: absolute;
 }
 
-.main.green .main_img2 img{ 
+.main.green .main_img2 img{
     top:0;
     left:40%;
-    position: absolute;   
+    position: absolute;
     transform: translate(-40%,0);
 }
 
@@ -408,10 +461,10 @@ left:0;
     position: absolute;
 }
 
-.main.green .main_img3 img{ 
+.main.green .main_img3 img{
     top: -16%;
     right: 20%;
-    position: absolute; 
+    position: absolute;
 }
 
 .main.green .main_img3 .back_line{
@@ -426,12 +479,12 @@ left:0;
     font-weight: 200;
     font-size: 70px;
     line-height: 85px;
-    text-align: right;    
+    text-align: right;
     background: linear-gradient(87.66deg, #0FD38F 2.44%, #C99034 101.49%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;    
+    text-fill-color: transparent;
 }
 
 .main.green .main_conent{
@@ -598,8 +651,8 @@ left:0;
     font-size: 18px;
     line-height: 22px;
     padding: 0.2rem 0.4rem;
-    text-align: center;    
-    border-radius: 4px; 
+    text-align: center;
+    border-radius: 4px;
 }
 
 .banner_title-wrap{
@@ -796,13 +849,13 @@ left:0;
     left: 50%;
     transform: translate(-50%,-50%);
     background: url(../img/black-marble-textures-plain\ 1.png);
-    -webkit-box-shadow: 0px 1px 12px 7px rgba(0,0,0,0.85); 
-    box-shadow: 0px 1px 12px 7px rgba(0,0,0,0.85);  
+    -webkit-box-shadow: 0px 1px 12px 7px rgba(0,0,0,0.85);
+    box-shadow: 0px 1px 12px 7px rgba(0,0,0,0.85);
 
 }
 
 .login_main{
-    margin:2.595rem auto; 
+    margin:2.595rem auto;
     max-width: 374px;
 }
 
@@ -910,16 +963,16 @@ margin: 2.425rem auto 0.738rem;
     align-items: center;
 }
 
-.chk_box { 
-    display: block; 
-    position: relative; 
-    padding-left: 1.875rem; 
-    cursor: pointer; 
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
+.chk_box {
+    display: block;
+    position: relative;
+    padding-left: 1.875rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
-    font-family: 'Pretendard';  
+    font-family: 'Pretendard';
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -930,46 +983,46 @@ margin: 2.425rem auto 0.738rem;
 }
 
 /* 기본 체크박스 숨기기 */
-.chk_box input[type="checkbox"] { 
-    display: none; 
+.chk_box input[type="checkbox"] {
+    display: none;
 }
 
 /* 선택되지 않은 체크박스 스타일 꾸미기 */
-.on { 
-    width: 20px; 
-    height: 20px; 
-    background: #262728; 
-    position: absolute; 
-    top: -4px; 
-    left: 0; 
+.on {
+    width: 20px;
+    height: 20px;
+    background: #262728;
+    position: absolute;
+    top: -4px;
+    left: 0;
     border:1px solid #909090;
 }
 
 /* 선택된 체크박스 스타일 꾸미기 */
-.chk_box input[type="checkbox"]:checked + .on { 
+.chk_box input[type="checkbox"]:checked + .on {
     background: #787676 }
 
 .on:after {
-    content: ""; 
-    position: absolute; 
-    display: none; 
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 .chk_box input[type="checkbox"]:checked + .on:after {
-    display: block; 
+    display: block;
 }
 
-.on:after { 
-    width: 6px; 
-    height: 10px; 
-    border: solid #fff; 
-    border-width: 0 2px 2px 0; 
-    -webkit-transform: rotate(45deg); 
-    -ms-transform: rotate(45deg); 
-    transform: rotate(45deg); 
-    position: absolute; 
-    left: 6px; 
-    top: 2px; 
+.on:after {
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 6px;
+    top: 2px;
 }
 
 .login_sns{
@@ -1151,7 +1204,7 @@ display: block;
     padding:0 2.313rem;
 }
 
-.membership{ 
+.membership{
     display: flex;
     border-top: 1px solid rgba(190, 142, 48, 0.4);
     border-bottom: 1px solid rgba(190, 142, 48, 0.4);
