@@ -13,3 +13,13 @@ function openTab(evt, cityName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+
+//Regular Javascript
+const toggleBtn = document.querySelector('#toggle-button');
+const menu = document.querySelector('.menu');
+
+// 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
