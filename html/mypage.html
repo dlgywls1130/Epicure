@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav id="navbar">
+            <ul class="navbar">
+                <li id="toggle-button">
+                    <img src="../img/menu.png" alt="menu">
+                </li>
+                <li>
+                    <img src="../img/logo.png" alt="logo">
+                </li>
+                <li>
+                    <ul class="navbar_right">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/search.png" alt="search">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/login.png" alt="login">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/notice.png" alt="notice">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- menu -->
+        <div class="menu tabs" id="menu">
+            <div class="menu_wrap">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'area')" id="defaultOpen">지역별</button>
+                    <button class="tablinks" onclick="openTab(event, 'city')">역세권</button>
+                    <button class="tablinks" onclick="openTab(event, 'taste')">맛집촌</button>
+                    <button class="tablinks" onclick="openTab(event, 'locate')">위치기반</button>
+                </div>
+
+
+                <div class="tabcontent" id="area">
+                    <ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab1">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab2">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab3">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab4">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab5">
+                            <a class="tab-container__item--title" href="#">대구</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab6">
+                            <a class="tab-container__item--title" href="#">울산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab7">
+                            <a class="tab-container__item--title" href="#">부산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab8">
+                            <a class="tab-container__item--title" href="#">강원</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab9">
+                            <a class="tab-container__item--title" href="#">충북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab10">
+                            <a class="tab-container__item--title" href="#">충남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab11">
+                            <a class="tab-container__item--title" href="#">전북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab12">
+                            <a class="tab-container__item--title" href="#">전남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab13">
+                            <a class="tab-container__item--title" href="#">경북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab14">
+                            <a class="tab-container__item--title" href="#">경남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab15">
+                            <a class="tab-container__item--title" href="#">제주</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab16">
+                            <a class="tab-container__item--title" href="#">세종</a>
+                        </li>
+                    </ul>
+
+                    <ul class="content-container">
+                        <li id="tab1" class="content-container__content target">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab2" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab3" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabcontent" id="city">
+                    <ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab17">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab18">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab19">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab20">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab21">
+                            <a class="tab-container__item--title" href="#">대구</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab22">
+                            <a class="tab-container__item--title" href="#">울산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab23">
+                            <a class="tab-container__item--title" href="#">부산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab24">
+                            <a class="tab-container__item--title" href="#">강원</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab25">
+                            <a class="tab-container__item--title" href="#">충북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab26">
+                            <a class="tab-container__item--title" href="#">충남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab27">
+                            <a class="tab-container__item--title" href="#">전북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab28">
+                            <a class="tab-container__item--title" href="#">전남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab29">
+                            <a class="tab-container__item--title" href="#">경북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab30">
+                            <a class="tab-container__item--title" href="#">경남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab31">
+                            <a class="tab-container__item--title" href="#">제주</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab32">
+                            <a class="tab-container__item--title" href="#">세종</a>
+                        </li>
+                    </ul>
+
+                    <ul class="content-container">
+                        <li id="tab17" class="content-container__content target">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab18" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab19" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabcontent" id="taste">
+                    <<ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab20">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab21">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab22">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab23">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        </ul>
+
+                        <ul class="content-container">
+                            <li id="tab20" class="content-container__content target">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                            <li id="tab21" class="content-container__content">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                            <li id="tab22" class="content-container__content">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                            <li id="tab23" class="content-container__content">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="tabcontent" id="locate">
+                    <ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab24">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab25">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab26">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab27">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab28">
+                            <a class="tab-container__item--title" href="#">대구</a>
+                        </li>
+                    </ul>
+
+                    <ul class="content-container">
+                        <li id="tab24" class="content-container__content target">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab25" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab26" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab27" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab28" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <section class="mypage">
+        <h2 class="maypage_title">My page</h2>
+        <div class="mypage_tab">
+            <ul class="tab-container">
+                <li class="tab-container__item active" data-tab="tab1">
+                    <a class="tab-container__item--title" href="#">내가쓴글</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab2">
+                    <a class="tab-container__item--title" href="#">프리미엄회원</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab3">
+                    <a class="tab-container__item--title" href="#">계정정보</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab4">
+                    <a class="tab-container__item--title" href="#">문의내역</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab5">
+                    <a class="tab-container__item--title" href="#">
+                        <img src="../img/fi_bookmark.png">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="content-container">
+                <div id="tab1" class="content-container__content target">
+                    
+                    <div class="mypage_write">
+                        <div class="maypage_mytitle">내가쓴글<span>(14)</span></div>
+                        <div class="maypage_write_contnet">
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <div class="write_title">가온 <span>한식 | 모던한식</span></div>
+                                <div class="write_description">
+                                    <div class="description_avatar">
+                                        <img src="../img/avatar.png">
+                                    </div>
+                                    <div class="description_content">
+                                        <div class="description_navbar flex">
+                                            <div class="description_title">김에피</div>
+                                            <div class="delete">
+                                                <img src="../img/delete.png">
+                                            </div>
+                                        </div>
+                                        <div class="description_review">
+                                            가게 외관도 예뻤습니다. 분위기도 좋고..!
+                                            <br>오랜만에 가족들에게 대접하는 날이였는데 아주 만족하고 귀가하였습니다.
+                                            <br>감사합니다.
+                                        </div>
+                                        <div class="description_date">2021년 8월 17일</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page_wrap">
+                            <div class="page_prev"></div>
+                            <div class="page_next"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab2" class="content-container__content">
+                    <div class="title">STEP1. 회원정보 입력</div>
+                    <div class="membership_content">
+                        <div class="infomation">
+                            <ul class="membership">
+                                <li class="name">상호명</li>
+                                <li class="input_answer"><input type="text" name="name"></li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">이메일</li>
+                                <li class="input_answer"><input type="email" name="email"></li>
+                                <li class="overlap-btn">중복확인</li>
+                                <li class="info">사용 가능한 이메일 입니다.</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">비밀번호</li>
+                                <li class="input_answer"><input type="password" name="password"></li>
+                                <li class="info">+4~15자의 영문자, 숫자조합</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">비밀번호 확인</li>
+                                <li class="input_answer"><input type="password" name="passworldcheck"></li>
+                                <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">전화번호</li>
+                                <li class="input_answer"><input type="tel" name="call"></li>
+                                <li class="info">+선택사항</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">휴대전화</li>
+                                <li class="input_answer"><input type="tel" name="phone"></li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name adress_title">주소</li>
+                                <li class="input_answer">
+                                    <ul class="flex">
+                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li class="overlap-btn margin-left">우편번호 찾기</li>
+                                    </ul>
+                                    <ul>
+                                        <li><input type="text" name="adress" class="adress"></li>
+                                    </ul>
+                                    <ul class="flex sub_ul">
+                                        <li><input type="text" name="adress" class="adress_sub"></li>
+                                        <li class="info">+나머지 상세주소 입력</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="info_setting">
+                        <div class="title">STEP2. 정보수신 설정</div>
+                        <div class="membership_content">
+                            <ul class="membership">
+                                <li class="name">이메일 수신 설정</li>
+                                <li class="input_answer">
+                                    <label>
+                                        수신함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                    <label>
+                                        수신안함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">sns 수신 설정</li>
+                                <li class="input_answer">
+                                    <label>
+                                        수신함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                    <label>
+                                        수신안함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="submit">가입하기</button>
+
+
+                    <div class="login_sns">
+                        <div class="simple_login">
+                            <div class="simple_login_title">간편로그인</div>
+                            <ul class="simple_login_img">
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/google.png" alt="google">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/naver.png" alt="naver">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/kakao.png" alt="kakao">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer_logo">
+                <img src="../img/logo.png" alt="logo">
+            </div>
+            <p class="copyright">Copyright ® 네오비즈 All Rights Reserved.</p>
+            <div class="footer_bottom">
+                <ul class="footer_description">
+                    <li class="name">
+                        <p>네오비즈설립일 : 2002년 12월 2일</p>
+                        <p>대표: 최유식</p>
+                        <p>개인정보책임자 : 박기향</p>
+                    </li>
+                    <li class="adress">
+                        <p>주소 : 경기도 고양시 일산서구 가좌1로10 512-1301</p>
+                        <p>사업자등록번호 : 210-09-30249 통신판매업신고 : 제 959호</p>
+                        <p>대표전화 : 070-8724-6001</p>
+                    </li>
+                </ul>
+                <ul class="footer_menu">
+                    <li><a href="javascript:void(0);">개인정보 취급 방침</a></li>
+                    <li><a href="javascript:void(0);">1:1 메일상담</a></li>
+                    <li><a href="javascript:void(0);">로그인</a></li>
+                    <li><a href="javascript:void(0);">회원가입</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

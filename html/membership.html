@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,309 +11,314 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
 </head>
+
 <body>
 
     <header>
         <!-- navbar -->
-            <nav id="navbar">
-                <ul class="navbar">
-                    <li>
-                        <img src="../img/menu.png" alt="menu">
-                    </li>
-                    <li>
-                        <img src="../img/logo.png" alt="logo">
-                    </li>
-                    <li>
-                        <ul class="navbar_right">
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../img/search.png" alt="search">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../img/login.png" alt="login">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../img/notice.png" alt="notice">
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <nav id="navbar">
+            <ul class="navbar">
+                <li>
+                    <img src="../img/menu.png" alt="menu">
+                </li>
+                <li>
+                    <img src="../img/logo.png" alt="logo">
+                </li>
+                <li>
+                    <ul class="navbar_right">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/search.png" alt="search">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/login.png" alt="login">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/notice.png" alt="notice">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
     </header>
 
-<section id="membership">
+    <section id="membership">
 
-    <!-- top banner -->
+        <!-- top banner -->
 
-    <div class="top_banner">
-        <img src="../img/banner_logo.png" alt="banner_logo">
-        <div class="banner_text">
-            반갑습니다!
-            <br>지금 에피큐어에 가입하고
-            <br><span>3,401</span>곳의 맛집 정보를 확인하세요!
-        </div>
-    </div>
-
-    <div class="bottom_bg">
-        <img src="../img/bottom_bg.png">
-    </div>
-    <div class="join_content">
-        <ul class="tab-container">
-            <li class="tab-container__item active" data-tab="tab1">
-                <a class="tab-container__item--title" href="#">개인회원</a>
-            </li>
-            <li class="tab-container__item" data-tab="tab2">
-                <a class="tab-container__item--title" href="#">맛집회원</a>
-            </li>
-        </ul>
-
-        <div class="content-container">
-            <div id="tab1" class="content-container__content target">
-                <div class="title">STEP1. 회원정보 입력</div>
-                <div class="membership_content">
-                    <div class="infomation">
-                        <ul class="membership">
-                            <li class="name">이름</li>
-                            <li class="input_answer"><input type="text" name="name"></li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">이메일</li>
-                            <li class="input_answer"><input type="email" name="email"></li>
-                            <li class="overlap-btn">중복확인</li>
-                            <li class="info">사용 가능한  이메일 입니다.</li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">비밀번호</li>
-                            <li class="input_answer"><input type="password" name="password"></li>
-                            <li class="info">+4~15자의 영문자,          숫자조합</li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">비밀번호 확인</li>
-                            <li class="input_answer"><input type="password" name="passworldcheck"></li>
-                            <li class="info err">비밀번호가 일치하지 않습니다. </li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">전화번호</li>
-                            <li class="input_answer"><input type="tel" name="call"></li>
-                            <li class="info">+선택사항</li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">휴대전화</li>
-                            <li class="input_answer"><input type="tel" name="phone"></li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name adress_title">주소</li>
-                            <li class="input_answer">
-                                <ul class="flex">
-                                    <li><input type="text" name="adress" class="post_number"></li>
-                                    <li><input type="text" name="adress" class="post_number"></li>
-                                    <li class="overlap-btn margin-left">우편번호 찾기</li>
-                                </ul>
-                                <ul>
-                                    <li><input type="text" name="adress" class="adress"></li>
-                                </ul>
-                                <ul class="flex sub_ul">
-                                    <li><input type="text" name="adress" class="adress_sub"></li>
-                                    <li class="info">+나머지 상세주소 입력</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-        
-                </div>
-                <div class="info_setting">
-                    <div class="title">STEP2. 정보수신 설정</div>
-                    <div class="membership_content">
-                        <ul class="membership">
-                            <li class="name">이메일 수신 설정</li>
-                            <li class="input_answer">
-                                <label> 
-                                    수신함
-                                    <input type="checkbox" name="name">
-                                </label>
-                                <label> 
-                                    수신안함
-                                    <input type="checkbox" name="name">
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">sns 수신 설정</li>
-                            <li class="input_answer">
-                                <label> 
-                                    수신함
-                                    <input type="checkbox" name="name">
-                                </label>
-                                <label> 
-                                    수신안함
-                                    <input type="checkbox" name="name">
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-
-                <button type="button" class="submit">가입하기</button>
-
-                <div class="login_sns">
-                    <div class="simple_login">
-                        <div class="simple_login_title">간편로그인</div>
-                        <ul class="simple_login_img">
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/google.png" alt="google">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/naver.png" alt="naver">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/kakao.png" alt="kakao">
-                                </a></li>
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/facebook.png" alt="facebook">
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="tab2" class="content-container__content">
-                <div class="title">STEP1. 회원정보 입력</div>
-                <div class="membership_content">
-                    <div class="infomation">
-                        <ul class="membership">
-                            <li class="name">상호명</li>
-                            <li class="input_answer"><input type="text" name="name"></li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">이메일</li>
-                            <li class="input_answer"><input type="email" name="email"></li>
-                            <li class="overlap-btn">중복확인</li>
-                            <li class="info">사용 가능한 이메일 입니다.</li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">비밀번호</li>
-                            <li class="input_answer"><input type="password" name="password"></li>
-                            <li class="info">+4~15자의 영문자, 숫자조합</li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">비밀번호 확인</li>
-                            <li class="input_answer"><input type="password" name="passworldcheck"></li>
-                            <li class="info err">비밀번호가 일치하지 않습니다. </li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">전화번호</li>
-                            <li class="input_answer"><input type="tel" name="call"></li>
-                            <li class="info">+선택사항</li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">휴대전화</li>
-                            <li class="input_answer"><input type="tel" name="phone"></li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name adress_title">주소</li>
-                            <li class="input_answer">
-                                <ul class="flex">
-                                    <li><input type="text" name="adress" class="post_number"></li>
-                                    <li><input type="text" name="adress" class="post_number"></li>
-                                    <li class="overlap-btn margin-left">우편번호 찾기</li>
-                                </ul>
-                                <ul>
-                                    <li><input type="text" name="adress" class="adress"></li>
-                                </ul>
-                                <ul class="flex sub_ul">
-                                    <li><input type="text" name="adress" class="adress_sub"></li>
-                                    <li class="info">+나머지 상세주소 입력</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-        
-                </div>
-                <div class="info_setting">
-                    <div class="title">STEP2. 정보수신 설정</div>
-                    <div class="membership_content">
-                        <ul class="membership">
-                            <li class="name">이메일 수신 설정</li>
-                            <li class="input_answer">
-                                <label> 
-                                    수신함
-                                    <input type="checkbox" name="name">
-                                </label>
-                                <label> 
-                                    수신안함
-                                    <input type="checkbox" name="name">
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="membership">
-                            <li class="name">sns 수신 설정</li>
-                            <li class="input_answer">
-                                <label> 
-                                    수신함
-                                    <input type="checkbox" name="name">
-                                </label>
-                                <label> 
-                                    수신안함
-                                    <input type="checkbox" name="name">
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-
-                <button type="button" class="submit">가입하기</button>
-
-
-                <div class="login_sns">
-                    <div class="simple_login">
-                        <div class="simple_login_title">간편로그인</div>
-                        <ul class="simple_login_img">
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/google.png" alt="google">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/naver.png" alt="naver">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/kakao.png" alt="kakao">
-                                </a></li>
-                            <li>
-                                <a href="javascript:void(0)" class="simple_login_logo">
-                                    <img src="../img/facebook.png" alt="facebook">
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                
+        <div class="top_banner">
+            <img src="../img/banner_logo.png" alt="banner_logo">
+            <div class="banner_text">
+                반갑습니다!
+                <br>지금 에피큐어에 가입하고
+                <br><span>3,401</span>곳의 맛집 정보를 확인하세요!
             </div>
         </div>
-    
+
+        <div class="bottom_bg">
+            <img src="../img/bottom_bg.png">
+        </div>
+        <div class="join_content">
+            <ul class="tab-container">
+                <li class="tab-container__item active" data-tab="tab1">
+                    <a class="tab-container__item--title" href="#">개인회원</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab2">
+                    <a class="tab-container__item--title" href="#">맛집회원</a>
+                </li>
+            </ul>
+
+            <div class="content-container">
+                <div id="tab1" class="content-container__content target">
+                    <div class="title">STEP1. 회원정보 입력</div>
+                    <div class="membership_content">
+                        <div class="infomation">
+                            <ul class="membership">
+                                <li class="name">이름</li>
+                                <li class="input_answer"><input type="text" name="name"></li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">이메일</li>
+                                <li class="input_answer"><input type="email" name="email"></li>
+                                <li class="overlap-btn">중복확인</li>
+                                <li class="info">사용 가능한 이메일 입니다.</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">비밀번호</li>
+                                <li class="input_answer"><input type="password" name="password"></li>
+                                <li class="info">+4~15자의 영문자, 숫자조합</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">비밀번호 확인</li>
+                                <li class="input_answer"><input type="password" name="passworldcheck"></li>
+                                <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">전화번호</li>
+                                <li class="input_answer"><input type="tel" name="call"></li>
+                                <li class="info">+선택사항</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">휴대전화</li>
+                                <li class="input_answer"><input type="tel" name="phone"></li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name adress_title">주소</li>
+                                <li class="input_answer">
+                                    <ul class="flex">
+                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li class="overlap-btn margin-left">우편번호 찾기</li>
+                                    </ul>
+                                    <ul>
+                                        <li><input type="text" name="adress" class="adress"></li>
+                                    </ul>
+                                    <ul class="flex sub_ul">
+                                        <li><input type="text" name="adress" class="adress_sub"></li>
+                                        <li class="info">+나머지 상세주소 입력</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
 
-    </div>
-</section>
+                    </div>
+                    <div class="info_setting">
+                        <div class="title">STEP2. 정보수신 설정</div>
+                        <div class="membership_content">
+                            <ul class="membership">
+                                <li class="name">이메일 수신 설정</li>
+                                <li class="input_answer">
+                                    <label>
+                                        수신함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                    <label>
+                                        수신안함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">sns 수신 설정</li>
+                                <li class="input_answer">
+                                    <label>
+                                        수신함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                    <label>
+                                        수신안함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="submit">가입하기</button>
+
+                    <div class="login_sns">
+                        <div class="simple_login">
+                            <div class="simple_login_title">간편로그인</div>
+                            <ul class="simple_login_img">
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/google.png" alt="google">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/naver.png" alt="naver">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/kakao.png" alt="kakao">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab2" class="content-container__content">
+                    <div class="title">STEP1. 회원정보 입력</div>
+                    <div class="membership_content">
+                        <div class="infomation">
+                            <ul class="membership">
+                                <li class="name">상호명</li>
+                                <li class="input_answer"><input type="text" name="name"></li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">이메일</li>
+                                <li class="input_answer"><input type="email" name="email"></li>
+                                <li class="overlap-btn">중복확인</li>
+                                <li class="info">사용 가능한 이메일 입니다.</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">비밀번호</li>
+                                <li class="input_answer"><input type="password" name="password"></li>
+                                <li class="info">+4~15자의 영문자, 숫자조합</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">비밀번호 확인</li>
+                                <li class="input_answer"><input type="password" name="passworldcheck"></li>
+                                <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">전화번호</li>
+                                <li class="input_answer"><input type="tel" name="call"></li>
+                                <li class="info">+선택사항</li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">휴대전화</li>
+                                <li class="input_answer"><input type="tel" name="phone"></li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name adress_title">주소</li>
+                                <li class="input_answer">
+                                    <ul class="flex">
+                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li class="overlap-btn margin-left">우편번호 찾기</li>
+                                    </ul>
+                                    <ul>
+                                        <li><input type="text" name="adress" class="adress"></li>
+                                    </ul>
+                                    <ul class="flex sub_ul">
+                                        <li><input type="text" name="adress" class="adress_sub"></li>
+                                        <li class="info">+나머지 상세주소 입력</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="info_setting">
+                        <div class="title">STEP2. 정보수신 설정</div>
+                        <div class="membership_content">
+                            <ul class="membership">
+                                <li class="name">이메일 수신 설정</li>
+                                <li class="input_answer">
+                                    <label>
+                                        수신함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                    <label>
+                                        수신안함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="membership">
+                                <li class="name">sns 수신 설정</li>
+                                <li class="input_answer">
+                                    <label>
+                                        수신함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                    <label>
+                                        수신안함
+                                        <input type="checkbox" name="name">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="submit">가입하기</button>
+
+
+                    <div class="login_sns">
+                        <div class="simple_login">
+                            <div class="simple_login_title">간편로그인</div>
+                            <ul class="simple_login_img">
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/google.png" alt="google">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/naver.png" alt="naver">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/kakao.png" alt="kakao">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="simple_login_logo">
+                                        <img src="../img/facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
 
 
 
@@ -324,7 +330,7 @@
             <div class="footer_logo">
                 <img src="../img/logo.png" alt="logo">
             </div>
-            <p class="copyright">Copyright ®  네오비즈 All Rights Reserved.</p>
+            <p class="copyright">Copyright ® 네오비즈 All Rights Reserved.</p>
             <div class="footer_bottom">
                 <ul class="footer_description">
                     <li class="name">
@@ -345,11 +351,12 @@
                     <li><a href="javascript:void(0);">회원가입</a></li>
                 </ul>
             </div>
-            
+
         </div>
     </footer>
 
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>
