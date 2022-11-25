@@ -321,6 +321,7 @@ background-color: none;
     color: #fff !important;
 }
 
+
 .menu .tab-container__item--title{
     color:#fff;
     font-weight: 500;
@@ -328,7 +329,9 @@ background-color: none;
     line-height: 22px;
     font-family: 'Pretendard';
     margin: 0;
+
 }
+
 
 #menu .tab-container {
     display: flex;
@@ -1453,7 +1456,7 @@ display: block;
 
 .mypage{
     max-width: 719px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 }
 
 .maypage_title{
@@ -1563,6 +1566,7 @@ height:54px;
 .delete{
     width: 24px;
     height: 24px;
+    margin-right: 18px;
 }
 
 
@@ -1585,4 +1589,203 @@ margin-top:24px ;
 
 .write_description{
     display: flex;
+    margin-top: 12px;
+}
+
+.top_bg{
+    width: 100%;
+    height: 275px;
+    background: #262728;
+    position: absolute;
+    z-index: -9;
+}
+
+.mypage .tab-container {
+    display: flex;
+    border-bottom:  none;
+}
+
+
+.mypage .tab-container__item{
+    cursor: pointer;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    justify-content: center;
+    background: #2E2C29;
+    color: #C99034;
+    margin-right: 16px;
+    border:1px solid #4D402B;
+    align-items: center;
+}
+
+.mypage .tab-container li:last-child {
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #2E2C29;
+    color: #C99034;
+    margin-right: 16px;
+    border:1px solid #4D402B;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 56px;
+}
+
+.mypage  .tab-container .bookmark{
+    width: 24px;
+    height: 24px;
+}
+
+.mypage .tab-container__item.active {
+
+    background-color: #BE8E30;
+}
+
+.mypage .tab-container__item.active .tab-container__item--title{
+    color: #fff !important;
+}
+
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 410px;
+  height: 254px;
+  border: 1px solid #D3D3D3;
+  padding: 0 80px;
+}
+.close-button {
+  text-align: center;
+  cursor: pointer;
+  background-color: #C5C5C5;
+  width: 216px;
+  height: 44px;
+  font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-right: 9px;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.delete-button{
+    text-align: center;
+    cursor: pointer;
+    background-color:  #C99034;
+    width: 216px;
+    height: 44px;
+    font-family: 'Pretendard';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF;
+      align-items: center;
+      justify-content: center;
+      display:flex;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modeal_btn{
+    margin-top: 39px;
+}
+
+
+.modal_wrapp{
+    margin:32px auto 25px;
+    text-align: center;
+}
+
+.modal_delete{
+    margin-bottom: 23px;
+}
+
+.modal_txt{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center; 
+    color: #212121;
+}
+
+.write_ques{
+    width: 100%;
+    height: 128px;
+    border:1px solid#ECECEC; 
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 18px 19px;
+    margin-bottom: 20px;
+}
+
+.ques_title{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+color: #262728;
+}
+
+.quse_btn{
+    padding: 4px 8px;
+    width: 80px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 33px;
+    color: #C99034;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 11px;
+    border-radius: 33px;
+}
+
+.quse_btn.answer{
+    background: #C99034;
+border-radius: 33px;
+color: #fff;
+}
+
+.ques_top{
+    margin-bottom: 14px;
 }
