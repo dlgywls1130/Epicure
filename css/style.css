@@ -1815,6 +1815,7 @@ color: #262728;
     align-items: center;
     margin-left: 11px;
     border-radius: 33px;
+    justify-content: center;
 }
 
 .quse_btn.answer{
@@ -2252,7 +2253,7 @@ cursor:pointer;
 }
 
 .filter_body .redlist{
-    height:300px;
+    max-height:300px;
     /* width: calc(100% / 4); */
     -webkit-box-shadow: 1px 8px 15px 5px rgba(0,0,0,0.1); 
     box-shadow: 1px 8px 15px 5px rgba(0,0,0,0.1);
@@ -2269,7 +2270,7 @@ cursor:pointer;
     justify-content: space-between;
 }
 
-.redlist .redlist_tilte .title{
+.redlist .redlist_tilte .main_filter_title{
     margin: 0;
     font-family: 'Pretendard',sans-serif;
 font-style: normal;
@@ -2279,6 +2280,18 @@ line-height: 100%;
 color: #232323;
 }
 
+.redlist_img_bage{
+    position: relative;
+}
+
+
+.bookmark_ab{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+}
 
 .redlist_footer{
 background-color: #fff;
@@ -2307,4 +2320,194 @@ font-weight: 500;
 font-size: 12px;
 line-height: 100%;
 color: #939394;
+}
+
+.week_body{
+    display: flex;
+}
+
+.week_body .redlist_header{
+    display: flex;
+    align-items: center;
+    padding: 17px 12px;
+
+}
+
+.week_filter{
+    width: calc(100% / 3);
+    margin-right: 50px;
+}
+
+.week_filter:last-child{
+    margin-right: 0;
+}
+
+.week_body .redlist{
+    max-height: 700px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    border-radius: 10px;
+}
+
+.redlist_header .filter_title{
+font-family:  'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: -0.1px;
+color: #000000;
+}
+
+.week_filter .location{
+    margin-top:3px;
+}
+
+.week_filter .title_wrap{
+    margin-left: 7.75px;
+}
+.redslist_body{
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 130%;
+letter-spacing: -0.1px;
+color: #313131;
+padding: 0 14px;
+}
+
+.week_filter .redlist_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redlist_footer .redlist_left{
+    display: flex;
+    align-items: center;
+
+}
+
+.favorite, .massage{
+    display: flex;
+    align-items: center;
+    border: 1px solid #E9E9E9;
+border-radius: 50px;
+width: 72px;
+height: 28px;
+justify-content: center;
+}
+
+.favorite{
+    margin-right: 6px;
+}
+
+.favorite img{
+    width:19px;
+    margin-right: 6px;
+}
+
+.massage img{
+    width: 20px;
+    margin-right: 6px;
+}
+
+
+
+.week_filter .redlist .redlist_img{
+    width:100%;
+    object-fit: cover;
+  /* -webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+}
+
+.gra{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.week_filter .redlist figcaption{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;  
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+color: #FFFFFF;
+}
+
+.filcaption{
+    position: relative;
+}
+
+.discount_bage{
+position: absolute;
+width: 75px;
+height: 24px;
+right: 14px;
+top: 14px;
+background: #252525;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+border-radius: 1px;
+
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: right;
+color: #F1F1F1;
+justify-content: center;
+}
+
+.page_wrap{
+    margin-top: 140px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.page_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_prev{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.number{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #CACACA;
+cursor: pointer;
+}
+
+.number.active{
+color: #000000;
+    }
+
+.page_number li{
+    margin-right: 47px;
+}
+
+.page_number li:last-child{
+    margin-right: 0;
+}
+
+.page_next{
+    margin-left: 20px;
+    cursor: pointer;
 }
