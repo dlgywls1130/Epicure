@@ -47,18 +47,39 @@
 }
 
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
+    font-family: "Pretendard";
     font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype'),
+    url('../fonts/Pretendard-Regular.otf') format('otf');
 }
 
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
+    font-family: "Pretendard";
     font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype'),
+    url('../fonts/Pretendard-Medium.otf') format('otf');
 }
+
+@font-face {
+    font-family: "Pretendard-Bold";
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype'),
+    url('../fonts/Pretendard-Bold.otf') format('otf');
+}
+
+@font-face {
+    font-family: "Pretendard-ExtraBold";
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Pretendard-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Pretendard-ExtraBold.otf') format('otf');
+}
+
+
+
 
 *{
     box-sizing: border-box;
@@ -775,7 +796,7 @@ left:0;
 
 .banner_btn{
     margin-top:2.25rem;
-    font-family: 'Pretendard-Regular',sans-serif;
+    font-family: 'Pretendard',sans-serif;
 }
 
 .banner_btn p{
@@ -785,7 +806,7 @@ left:0;
 
 
 .main-btn{
-    font-family: 'Pretendard-Regular',sans-serif;
+    font-family: 'Pretendard',sans-serif;
     border: 1px solid;
     border-image: linear-gradient(to right, rgba(255,185,0,0.1) 0%, rgba(255,255,165,1) 50%, rgba(255,185,0,0.1) 100%);
     border-image-slice: 1;
@@ -809,7 +830,7 @@ left:0;
 }
 
 .banner_sub-title{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -819,7 +840,7 @@ left:0;
 }
 
 .banner_main-title{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 54px;
@@ -838,7 +859,7 @@ left:0;
 .banner_descrption.font-right{
     text-align: right;
     font-weight: 600;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 }
 
 .banner_descrption.font-right .banner_btn{
@@ -864,7 +885,7 @@ left:0;
 }
 
 .write{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 400!important;
     font-size: 16px;
     line-height: 19px;
@@ -899,7 +920,7 @@ left:0;
 }
 
 .copyright{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -923,7 +944,7 @@ left:0;
 .footer_description li{
     margin-right: 0.688rem;
     position: relative;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -941,7 +962,7 @@ left:0;
 }
 
 .footer_menu{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1034,7 +1055,7 @@ left:0;
 s
 
 #login-form > input::placeholder{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -1064,7 +1085,7 @@ s
 
 
 .remember-check .sign_up .singn_up_link{
-font-family: 'Pretendard';
+font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
@@ -1076,7 +1097,7 @@ color: #919191;
 }
 
 .remember-check .sign_up .id_find_link{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -1094,7 +1115,7 @@ box-shadow: 0px 0px 83.0443px rgba(0, 0, 0, 0.4);
 border-radius: 1px;
 width: 374px;
 height: 50px;
-font-family: 'Pretendard';
+font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 15px;
@@ -1120,7 +1141,7 @@ margin: 2.425rem auto 0.738rem;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -1183,7 +1204,7 @@ margin: 2.425rem auto 0.738rem;
 }
 
 .simple_login_title{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-weight: 700;
 font-size: 15px;
 line-height: 18px;
@@ -1291,7 +1312,7 @@ display: block;
 }
 
 .top_banner .banner_text{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 126%;
@@ -1329,7 +1350,7 @@ display: block;
 }
 
 .content-container .title{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1365,7 +1386,7 @@ display: block;
 .membership .name{
     background: rgba(255, 255, 255, 0.03);
     color:#fff;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
@@ -1390,7 +1411,7 @@ display: block;
 .membership .overlap-btn{
     background-color: #2C2927;
     color:#BE8E30;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -1401,7 +1422,7 @@ display: block;
 }
 
 .membership .info{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -1443,7 +1464,7 @@ display: block;
 }
 
 .input_answer label{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1455,22 +1476,38 @@ display: block;
 /* mypage */
 
 .mypage{
+
+}
+
+
+.tab-container{
+    max-width: 719px;
+    margin: 0 auto;
+}
+
+#tab101,#tab102,#tab103,#tab104{
     max-width: 719px;
     margin: 0 auto 100px;
 }
 
+#tab105 .mypage_write{
+    max-width: 719px;
+    margin: 24px auto 0;
+}
+
 .maypage_title{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
 line-height: 126%;
 color: #C99034;
-margin:60px 0 32px;
+margin:60px auto 32px;
+max-width: 719px;
 }
 
 .maypage_mytitle{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -1482,7 +1519,7 @@ margin:60px 0 32px;
 }
 
 .maypage_mytitle span{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -1492,7 +1529,7 @@ margin-left: 6px;
 }
 
 .write .write_title{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -1503,7 +1540,7 @@ align-items: center;
 }
 
 .write .write_title span{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-weight: 400;
 font-size: 12px;
 line-height: 100%;
@@ -1520,7 +1557,7 @@ margin-left: 9px;
 }
 
 .description_title{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1529,7 +1566,7 @@ margin-left: 9px;
 }
 
 .description_review{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -1540,7 +1577,7 @@ text-align: left;
 }
 
 .description_date{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -1622,7 +1659,7 @@ margin-top:24px ;
 .mypage .tab-container li:last-child {
     cursor: pointer;
     display: flex;
-    width: 40px;
+    width: 40px!important;
     height: 40px;
     background: #2E2C29;
     color: #C99034;
@@ -1639,7 +1676,7 @@ margin-top:24px ;
 }
 
 .mypage .tab-container__item.active {
-
+    width: 140px!important;
     background-color: #BE8E30;
 }
 
@@ -1677,7 +1714,7 @@ margin-top:24px ;
   background-color: #C5C5C5;
   width: 216px;
   height: 44px;
-  font-family: 'Pretendard';
+  font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1699,7 +1736,7 @@ margin-top:24px ;
     background-color:  #C99034;
     width: 216px;
     height: 44px;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -1732,7 +1769,7 @@ margin-top:24px ;
 }
 
 .modal_txt{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1751,7 +1788,7 @@ margin-top:24px ;
 }
 
 .ques_title{
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -1769,7 +1806,7 @@ color: #262728;
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard',sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1788,4 +1825,486 @@ color: #fff;
 
 .ques_top{
     margin-bottom: 14px;
+}
+
+.mypage .name{
+    background: rgba(255, 255, 255, 0.03);
+    color: #313131;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0.875rem 1.25rem;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.mypage.input_answer{
+    padding: 0.625rem 1.063rem;
+
+}
+
+.mypage input{
+    background-color: transparent;
+    border:1px solid #5A5A5A;
+    height: 24px;
+}
+
+.membership li:nth-child(1){
+    width: 27%;
+}
+
+.mypage .overlap-btn{
+    background-color: #2C2927;
+    color:#BE8E30;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px;
+    padding:0.188rem 0.625rem;
+    text-align: center;
+}
+
+.mypage .info{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 0.563rem;
+    color: #919191;
+}
+
+.mypage .adress_title{
+    padding:0.813rem 1.25rem 4.625rem;
+}
+
+.mypage input{
+    background-color: transparent;
+    border: 1px solid #F0F0F0;
+    height: 24px;
+}
+
+.mypage .overlap-btn{
+    background-color: #FCF9F5;
+    color:#BE8E30;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 40px;
+    padding:0.188rem 0.625rem;
+    text-align: center;
+    filter: none;
+}
+
+.mypage .submit{
+    box-shadow: none;
+    color: #929292;
+    background: #F7F7F7;
+    margin: 2.425rem auto 2.5rem;
+}
+
+.submit.payment_btn{
+    background-color: #2B2B2B;
+    font-family: 'Pretendard',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #C99034;
+}
+
+.mypage .input_answer label{
+    color: #545454;
+}
+
+.mypage input[type="checkbox"]{
+    background:#F0F0F0;
+}
+
+
+.card_title{
+background: #D0D0D0;
+height: 47px;
+border-radius: 10px 10px 0 0;
+display: flex;
+justify-content: space-between;
+padding: 7px 17px;
+
+}
+
+
+.card_title.active{
+    background: #262728;
+height: 47px;
+border-radius: 10px 10px 0 0;
+display: flex;
+justify-content: space-between;
+padding: 7px 17px;
+}
+
+.card_title h2{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 140%;
+color: #fff;
+
+}
+
+.card_title.active h2{
+    color: #C99034;
+}
+.text_top {
+    margin-left: 18px;
+}
+
+.card_content{
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+color: #8B8B8B;
+} 
+
+.card_cash.active{
+color: #262728;
+}
+
+.card_cash{
+color: #A4A5A6;
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+text-align: right;
+}
+
+
+
+.text_top li{
+width: 100%!important;
+list-style-type: disc;
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #545454;
+
+}
+
+.use_select{
+    width: 100%;
+    background: #F5F6F7;
+    padding: 32px 38px;
+    margin-top:20px;
+}
+
+.use_select .maypage_mytitle{
+    margin: 0;
+    border-bottom: none;
+}
+
+.select_card_wrap{
+    margin-top: 22px;
+    margin-bottom: 31px;
+}
+
+.select_card_wrap .select_card{
+    width: calc(100% / 3);
+    height: 132px;
+    margin-right: 22px;
+}
+
+.select_card_wrap .select_card:last-child{
+    margin-right: 0;
+}
+
+.select_card .card_body{
+height: 85px;
+background: #FFFFFF;
+box-shadow: 0px 0px 16px rgba(97, 97, 97, 0.1);
+border-radius: 0 0  10px 10px;
+padding: 11px 17px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.payment {
+    margin-top: 48px;
+    padding: 39px;
+}
+
+.payment .maypage_mytitle{
+    margin: 0;
+    border-bottom: none;
+}
+
+
+/* radio */
+
+.radio-buttons-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+
+.radio-buttons-2 .radio-button {
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    flex: 1 0 50%;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #545454;
+}
+
+/* 기존 라디오 버튼 삭제 */
+.radio-button input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+
+/* 2번 그룹 커스텀 라디오 버튼, 외부 원 (border 처리) */
+.radio-buttons-2 .radio-button .custom-radio {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+/* 2번 그룹 라디오 버튼 선택 시 배경 색상 변경, 외부 원 (border 처리) */
+.radio-buttons-2 .radio-button input[type="radio"]:checked ~ .custom-radio {
+    border: 1px solid #C99034;
+}
+
+/* 2번 그룹 라디오 버튼, 내부 원 */
+.radio-buttons-2 .custom-radio:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+/* 2번 그룹 라디오 버튼 선택 시 색상 변경, 내부 원 */
+.radio-buttons-2 .radio-button input[type="radio"]:checked ~ .custom-radio:after {
+    background-color: #C99034;
+}
+
+.pay_logo{
+    width: 65px;
+    height: 27px;
+    margin-right: 10px;
+}
+
+.payment_cash{
+    margin-top: 74px;
+    padding: 0 36px;
+}
+
+.payment_cash_li li:first-child{
+    color: #313131;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0.875rem 1.25rem;
+    background: rgba(0, 0, 0, 0.03);
+    width: 18%;
+}
+
+.payment_cash_li .input_answer{    
+    padding: 0.625rem 1.063rem;
+}
+
+.payment_cash_li{
+display: flex;
+    border-top: 1px solid rgba(190, 142, 48, 0.4);
+    border-bottom: 1px solid rgba(190, 142, 48, 0.4);
+    align-items: center;
+}
+
+.payment_cash .info{
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+color: #7E7E7E;
+}
+
+.payment_cash input{
+    width: 164px;
+    height: 24px;
+}
+
+.payment_cash h2{
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+margin-bottom: 20px;
+color: #C99034;
+}
+
+.account_copy{
+    align-items: center;
+    margin-top: 19px;
+}
+
+.account_copy h3{
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+color: #2B2B2B;
+
+}
+
+.account_copy button{
+    width: 48px;
+height: 23px;
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #FFFFFF;
+padding: 2px 4px;
+background-color: #C99034;
+border-radius: 4px;
+margin-left: 12px;
+}
+
+
+.bookmark_filter .filter_item {
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+margin-bottom: 36px;
+color: #8A8A8A;
+background-color: transparent;
+cursor:pointer;
+}
+
+.bookmark_filter .filter_item.active {
+    font-weight: 700;
+    color: #C99034;
+    }
+
+.filter_body{
+
+    margin:78px auto;
+    max-width: 1215px;
+}
+
+.filter_body.invisible{
+    display: none;
+}
+
+.red-list_Wrap{
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.red-list_Wrap:last-child{
+    margin-bottom:0;
+}
+
+.filter_body .redlist{
+    height:300px;
+    /* width: calc(100% / 4); */
+    -webkit-box-shadow: 1px 8px 15px 5px rgba(0,0,0,0.1); 
+    box-shadow: 1px 8px 15px 5px rgba(0,0,0,0.1);
+    margin-right: 26px;
+}
+
+.filter_body .redlist:last-child{
+    margin-right:0;
+}
+
+.redlist .redlist_tilte{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.redlist .redlist_tilte .title{
+    margin: 0;
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 100%;
+color: #232323;
+}
+
+
+.redlist_footer{
+background-color: #fff;
+padding: 10px 14px 14px;
+border-radius: 0 0 10px 10px;
+}
+
+.redlist_footer span{
+font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #777A7C;
+
+}
+
+.location{
+    display:flex;
+    margin-top: 15px;
+}
+
+.location p{
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+color: #939394;
 }
