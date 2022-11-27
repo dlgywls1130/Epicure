@@ -36,8 +36,9 @@ function tabHandler(item) {
 
 //popup
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
+var trigger = document.querySelector(".view_more");
+var closeButton = document.querySelector(".close");
+var funcs = [];
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
@@ -47,6 +48,15 @@ function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
     }
+}
+
+
+for (var i = 0; i < trigger.length; i++) {
+    funcs[i] = Modal(i);
+}
+
+for (var j = 0; j < trigger.length; j++) {
+    funcs[j]();
 }
 
 trigger.addEventListener("click", toggleModal);
