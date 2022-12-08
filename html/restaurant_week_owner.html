@@ -1,0 +1,1581 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav id="navbar">
+            <ul class="navbar">
+                <li id="toggle-button">
+                    <img src="../img/menu.png" alt="menu">
+                </li>
+                <li>
+                    <img src="../img/logo.png" alt="logo">
+                </li>
+                <li>
+                    <ul class="navbar_right">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/search.png" alt="search">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/login.png" alt="login">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="../img/notice.png" alt="notice">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- menu -->
+        <div class="menu tabs" id="menu">
+            <div class="menu_wrap">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'area')" id="defaultOpen">지역별</button>
+                    <button class="tablinks" onclick="openTab(event, 'city')">역세권</button>
+                    <button class="tablinks" onclick="openTab(event, 'taste')">맛집촌</button>
+                    <button class="tablinks" onclick="openTab(event, 'locate')">위치기반</button>
+                </div>
+
+
+                <div class="tabcontent" id="area">
+                    <ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab1">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab2">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab3">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab4">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab5">
+                            <a class="tab-container__item--title" href="#">대구</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab6">
+                            <a class="tab-container__item--title" href="#">울산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab7">
+                            <a class="tab-container__item--title" href="#">부산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab8">
+                            <a class="tab-container__item--title" href="#">강원</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab9">
+                            <a class="tab-container__item--title" href="#">충북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab10">
+                            <a class="tab-container__item--title" href="#">충남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab11">
+                            <a class="tab-container__item--title" href="#">전북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab12">
+                            <a class="tab-container__item--title" href="#">전남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab13">
+                            <a class="tab-container__item--title" href="#">경북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab14">
+                            <a class="tab-container__item--title" href="#">경남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab15">
+                            <a class="tab-container__item--title" href="#">제주</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab16">
+                            <a class="tab-container__item--title" href="#">세종</a>
+                        </li>
+                    </ul>
+
+                    <ul class="content-container">
+                        <li id="tab1" class="content-container__content target">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab2" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab3" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabcontent" id="city">
+                    <ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab17">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab18">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab19">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab20">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab21">
+                            <a class="tab-container__item--title" href="#">대구</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab22">
+                            <a class="tab-container__item--title" href="#">울산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab23">
+                            <a class="tab-container__item--title" href="#">부산</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab24">
+                            <a class="tab-container__item--title" href="#">강원</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab25">
+                            <a class="tab-container__item--title" href="#">충북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab26">
+                            <a class="tab-container__item--title" href="#">충남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab27">
+                            <a class="tab-container__item--title" href="#">전북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab28">
+                            <a class="tab-container__item--title" href="#">전남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab29">
+                            <a class="tab-container__item--title" href="#">경북</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab30">
+                            <a class="tab-container__item--title" href="#">경남</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab31">
+                            <a class="tab-container__item--title" href="#">제주</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab32">
+                            <a class="tab-container__item--title" href="#">세종</a>
+                        </li>
+                    </ul>
+
+                    <ul class="content-container">
+                        <li id="tab17" class="content-container__content target">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab18" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab19" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabcontent" id="taste">
+                    <<ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab20">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab21">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab22">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab23">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        </ul>
+
+                        <ul class="content-container">
+                            <li id="tab20" class="content-container__content target">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                            <li id="tab21" class="content-container__content">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                            <li id="tab22" class="content-container__content">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                            <li id="tab23" class="content-container__content">
+                                <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="tabcontent" id="locate">
+                    <ul class="tab-container">
+                        <li class="tab-container__item active" data-tab="tab24">
+                            <a class="tab-container__item--title" href="#">서울</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab25">
+                            <a class="tab-container__item--title" href="#">경기</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab26">
+                            <a class="tab-container__item--title" href="#">인천</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab27">
+                            <a class="tab-container__item--title" href="#">대전</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab28">
+                            <a class="tab-container__item--title" href="#">대구</a>
+                        </li>
+                    </ul>
+
+                    <ul class="content-container">
+                        <li id="tab24" class="content-container__content target">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab25" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab26" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab27" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                        <li id="tab28" class="content-container__content">
+                            <ul class="sub_menu">
+                                <li>강남구(367)</li>
+                                <li>강동구(22)</li>
+                                <li>강북구(14)</li>
+                                <li>강서구(17)</li>
+                                <li>관악구(30)</li>
+                                <li>광진구(31)</li>
+                                <li>구로구(12)</li>
+                                <li>금전구(11)</li>
+                                <li>노원구(11)</li>
+                                <li>도봉구(11)</li>
+                                <li>동대문구(37)</li>
+                                <li>동작구(18)</li>
+                                <li>마포구(209)</li>
+                                <li>서대문구(69)</li>
+                                <li>서초구(110)</li>
+                                <li>성동구(42)</li>
+                                <li>성북구(46)</li>
+                                <li>송파구(50)</li>
+                                <li>양천구(21)</li>
+                                <li>영등포구(85)</li>
+                                <li>용산구(160)</li>
+                                <li>은평구(20)</li>
+                                <li>종로구(178)</li>
+                                <li>중구(197)</li>
+                                <li>중량구(11)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="top_bg restaurant"></div>
+    </header>
+
+
+
+    <div class="restaruat_alert_tab">
+        <ul class="tab-container">
+            <li class="tab-container__item" data-tab="tab301">
+                <a class="tab-container__item--title" href="#">내 식당 알림</a>
+            </li>
+            <li class="tab-container__item active" data-tab="tab302">
+                <a class="tab-container__item--title" href="#">전체 알림</a>
+            </li>
+        </ul>
+    
+        <div class="content-container">
+            <div id="tab301" class="content-container__content ">
+                <div class="restaruat_alert">
+                이 지역에 32개의 알림이 있어요.
+                </div>
+                <div class="area_filter_container">
+                    <div class="area_content">
+                        <img src="../img/arrow.png" alt="area">
+                        <p>지역별 > 서울 > 강북구</p>
+                    </div>
+                    <a href="../html/restaurant_week_alarm.html" class="filter_group">
+                        <p>알림만들기</p>
+                        <img src="../img/alarm_plus.png">
+                    </>
+                </div>
+    
+                <div class="filter_body week_body  restaurant">
+                    <div class="week_filter">
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/1.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/2.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <img src="../img/data_end.png" class="sell_end">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                    <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                    </div>
+    
+                    <div class="week_filter">
+                        <div class="redlist" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                            <div class="filcaption">
+                                <img src="../img/4.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>에피큐어 회원이라면,
+                                    <Br>3,000원 할인!</figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile3.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">Unsplash</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist view_more">
+                            <div class="filcaption">
+                                <img src="../img/2.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <img src="../img/data_end.png" class="sell_end">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                
+                    </div>
+    
+                    <div class="week_filter">
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/5.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <img src="../img/data_end.png" class="sell_end">
+                                <figcaption>오늘 한잔,
+                                    <br>연말 파티에 초대합니다. </figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                                </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile2.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">오늘 한잔, 성수점</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/6.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <img src="../img/data_end.png" class="sell_end">
+                                <figcaption>오늘 한잔,
+                                    <Br>연말 파티에 초대합니다. </figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile2.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">오늘 한잔, 성수점</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+            <div id="tab302" class="content-container__content target">
+                <div class="restaruat_alert">
+                이 지역에 32개의 알림이 있어요.
+                </div>
+                <div class="area_filter_container">
+                    <div class="area_content">
+                        <img src="../img/arrow.png" alt="area">
+                        <p>지역별 > 서울 > 강북구</p>
+                    </div>
+                    <div class="filter_group" id="popup">
+                        <p>필터설정</p>
+                        <img src="../img/filter.png">
+                    </div>
+                    <div class="category_modal filters" id="box" >
+                        <div class="category_modal_title">
+                            <span>
+                                <img src="../img/info.png">
+                            </span>
+                            필터와 정렬을 선택해보세요.
+                        </div>
+                        <div class="category_checkbox">
+                            <div class="radio_wrapp radio-buttons-2">
+                                <label for="term-10" class="radio-button">날짜마감순
+                                    <input type="radio" id="term-10" name="terms">
+                                    <span class="custom-radio"></span>
+                                </label>
+                                <label for="term-11" class="radio-button">최신순
+                                    <input type="radio" id="term-11" name="terms">
+                                    <span class="custom-radio"></span>
+                                </label>
+                                <label for="term-12" class="radio-button">인기순
+                                    <input type="radio" id="term-12" name="terms">
+                                    <span class="custom-radio"></span>
+                                </label>
+        
+                            </div>
+                            <div class="checkbox_wrapp">
+                                <label>
+                                    <input type="checkbox"> 할인
+                                </label>
+                                <label>
+                                    <input type="checkbox"> 이벤트
+                                </label>
+                                <label>
+                                    <input type="checkbox"> 기타
+                                </label>
+                            </div>
+        
+                            
+                        </div>
+                        <button class="category_submit">적용하기</button>
+                    </div>
+                </div>
+                
+    
+                <div class="filter_body week_body  restaurant">
+                    <div class="week_filter">
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/1.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/2.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                    <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/3.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>오늘 한잔,
+                                    <Br>연말 파티에 초대합니다 .</figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile2.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">오늘 한잔, 성수점</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>성수로 234-23, 5층</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/2.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="week_filter">
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/4.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>에피큐어 회원이라면,
+                                    <Br>3,000원 할인!</figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile3.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">Unsplash</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/2.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>그린도어에서
+                                    <br>30% 할인권을 드려요.</figcaption>
+                                <div class="discount_bage">할인 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile1.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">그린도어</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/4.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>에피큐어 회원이라면,
+                                    <Br>3,000원 할인!</figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile3.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">Unsplash</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                    </div>
+    
+                    <div class="week_filter">
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/5.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>오늘 한잔,
+                                    <br>연말 파티에 초대합니다. </figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                                </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile2.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">오늘 한잔, 성수점</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/6.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>오늘 한잔,
+                                    <Br>연말 파티에 초대합니다. </figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile2.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">오늘 한잔, 성수점</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/4.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>에피큐어 회원이라면,
+                                    <Br>3,000원 할인!</figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>        
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile3.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">Unsplash</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                
+                        <div class="redlist">
+                            <div class="filcaption">
+                                <img src="../img/6.png" class="redlist_img">
+                                <img src="../img/gra.png" class="gra">
+                                <figcaption>오늘 한잔,
+                                    <Br>연말 파티에 초대합니다.</figcaption>
+                                <div class="discount_bage">이벤트 | D-7</div>
+                            </div>
+    
+                            <div class="redlist_header">
+                                <img src="../img/profile2.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">오늘 한잔, 성수점</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redslist_body">
+                                오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                                참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                                드실 수 있도록 준비하고 있습니다. 
+                            </div>
+                            <div class="redlist_footer">
+                                <div class="redlist_left">
+                                    <div class="favorite">
+                                        <img src="../img/love.png">
+                                        <p>322</p>
+                                    </div>
+                                    <div class="massage">
+                                        <img src="../img/message.png">
+                                        <p>56</p>
+                                    </div>
+                                </div>
+                                <img src="../img/bookmark_tr.png" class="bookmark">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="button_etc">
+        <img src="../img/filter1.png">
+        <img src="../img/scroll.png">
+    </div>
+
+    <!-- 알림화면 -->
+<div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="restaurant_popup flex">
+                    <div class="aside_img">
+                        <img src="../img/4_1.png">
+                        <p>에피큐어 회원이라면,
+                            <br>3,000원 할인!</p>
+                    </div>
+                    <div class="restaruat_modal_content">
+                        <div class="restaruat_modal_content_header">
+                            <div class="redlist_header">
+                                <img src="../img/profile3.png" class="profile">
+                                <div class="title_wrap">
+                                    <div class="filter_title">Unsplash</div>
+                                    <div class="location">
+                                        <img src="../img/location.png">
+                                        <p>서울특별시 강남구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discount_bage">이벤트 | D-7</div>
+                        </div>
+                        <div class="restaruat_modal_content_write">
+                            오늘 한잔 성수점에서 연말 파티를 기획하고 있습니다.
+                            참가비는 1인 30,000원으로 Glass 3잔과 콰트로 치츠를 곁들여
+                            드실 수 있도록 준비하고 있습니다. 
+                        </div>
+                        <div class="insta_like">
+                            <div class="insta_icon">
+                                <div class="insta_icon_wrapp">
+                                    <img src="../img/like.png">
+                                    <p>322</p>
+                                </div>
+
+                                <div class="insta_icon_wrapp">
+                                    <img src="../img/message1.png">
+                                    <p>56</p>
+                                </div>
+                            </div>
+                            <div class="bookmark_modal">
+                                <img src="../img/bookmark_tr.png">
+                            </div>
+                        </div>
+                        <div class="chat_list">
+                            <div class="chat_list_content">
+                                <div class="chat_name">
+                                    <div class="chat_name_title">김에피</div>
+                                    <div class="chat_name_content">꼭 가보고 싶네요..</div>
+                                </div>
+                                <div class="chat_time">20분전</div>
+                            </div>
+                            <div class="chat_list_content">
+                                <div class="chat_name">
+                                    <div class="chat_name_title">박에피</div>
+                                    <div class="chat_name_content">우와 30%!</div>
+                                </div>
+                                <div class="chat_time">20분전</div>
+                            </div>
+                            <div class="chat_list_content">
+                                <div class="chat_name">
+                                    <div class="chat_name_title">올랑이</div>
+                                    <div class="chat_name_content">콰트로 치즈 맛있겠다. 갈게요 사장님!@@</div>
+                                </div>
+                                <div class="chat_time">20분전</div>
+                            </div>
+                            <div class="chat_list_content">
+                                <div class="chat_name">
+                                    <div class="chat_name_title">올랑이</div>
+                                    <div class="chat_name_content">콰트로 치즈 맛있겠다. 갈게요 사장님!@@</div>
+                                </div>
+                                <div class="chat_time">20분전</div>
+                            </div>
+                            <div class="chat_list_content">
+                                <div class="chat_name">
+                                    <div class="chat_name_title">올랑이</div>
+                                    <div class="chat_name_content">콰트로 치즈 맛있겠다. 갈게요 사장님!@@</div>
+                                </div>
+                                <div class="chat_time">20분전</div>
+                            </div>
+                        </div>
+
+                        <div class="input_comment flex">
+                            <input type="text" placeholder="댓글달기" >
+                            <button class="comment_btn">등록</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit_delte_btn flex">
+                    <div class="edit_btn">
+                        <img src="../img/modal_edit.png">
+                        <p>수정</p>
+                    </div>
+                    <div class="edit_btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        <img src="../img/modal_delet.png">
+                        <p>삭제</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="aside_btn">
+                <button type="button" class="close side" data-bs-dismiss="modal">
+                    <img src="../img/modal_x.png">
+                </button>
+                <div class="scroll_btn">
+                    <img src="../img/up_scroll.png" class="up_scroll">
+                    <img src="../img/down_scroll.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 알림삭제 팝업 -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+          
+        </div>
+        <div class="modal-body second_body">
+            <button type="button" class="last_delete" data-bs-dismiss="modal" aria-label="Close">삭제</button>
+            <button class="btn cancle" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">취소</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/menutab.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/filter.js"></script>
+</body>
+</html>

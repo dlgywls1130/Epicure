@@ -174,6 +174,9 @@ z-index: 2;
 
 /* ================= main ==================== */
 
+header{
+    position: relative;
+}
 /* navbar */
 .navbar{
     box-sizing: border-box;
@@ -1640,6 +1643,7 @@ margin-top:24px ;
     background: #262728;
     position: absolute;
     z-index: -9;
+    top: 0;
 }
 
 .mypage .tab-container {
@@ -1688,7 +1692,7 @@ margin-top:24px ;
     color: #fff !important;
 }
 
-
+/* 
 .modal {
 display: none;
 position: fixed;
@@ -1696,16 +1700,12 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-/* background-color: rgba(0, 0, 0, 0.5); */
 opacity: 0;
 transform: scale(1.1);
 transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: white;
   width: 410px;
   height: 254px;
@@ -1713,52 +1713,55 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   padding: 0 80px;
 }
 
-.close {
-  text-align: center;
-  cursor: pointer;
-  background-color: #C5C5C5;
-  width: 216px;
-  height: 44px;
-  font-family: 'Pretendard',sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-color: #FFFFFF;
-align-items: center;
-justify-content: center;
-display:flex;
-margin-right: 9px;
-}
 
-.close:hover {
-  background-color: darkgray;
-}
-
-.delete-button{
-    text-align: center;
-    cursor: pointer;
-    background-color:  #C99034;
-    width: 216px;
-    height: 44px;
-    font-family: 'Pretendard',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
-      text-align: center;
-      color: #FFFFFF;
-      align-items: center;
-      justify-content: center;
-      display:flex;
-}
 .show-modal {
   opacity: 1;
   visibility: visible;
   transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+} */
+
+.close {
+    text-align: center;
+    cursor: pointer;
+    background-color: #C5C5C5;
+    width: 216px;
+    height: 44px;
+    font-family: 'Pretendard',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  margin-right: 9px;
+  }
+  
+  .close:hover {
+    background-color: darkgray;
+  }
+  
+  .delete-button{
+      text-align: center;
+      cursor: pointer;
+      background-color:  #C99034;
+      width: 216px;
+      height: 44px;
+      font-family: 'Pretendard',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        align-items: center;
+        justify-content: center;
+        display:flex;
+  }
+
 
 .modeal_btn{
     margin-top: 39px;
@@ -2317,6 +2320,7 @@ font-family: 'Pretendard',sans-serif;
 .location{
     display:flex;
     margin-top: 15px;
+    align-items: center;
 }
 
 .location p{
@@ -2326,6 +2330,7 @@ font-weight: 500;
 font-size: 12px;
 line-height: 100%;
 color: #939394;
+margin-bottom: 0;
 }
 
 .week_body{
@@ -2934,4 +2939,697 @@ color:#393939;
 .category_submit:focus{
     background-color: #C99034;
     color: #262728;
+}
+
+
+/* 식당주 */
+
+.restaruat_alert{
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.area_filter_container{
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.area_content{
+    display: flex;
+    align-items:center;
+}
+
+.area_content p{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #7C7D80;
+}
+
+.filter_group{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+.filter_group p{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+color: #FFFFFF;
+}
+
+.top_bg.restaurant{
+    height: 530px;
+}
+
+.filter_body.restaurant{
+    max-width: 1130px;
+}
+
+.category_modal.filters{
+    position: absolute;
+    background: url(../img/pop_bg2.png);
+    width: 313px;
+    height: 283px;
+    background-size: contain;
+    right: -18px;
+    z-index: 11;
+    top: 60px;
+}
+
+.category_modal.filters .category_modal_title{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 40px 20px 20px;
+}
+
+.radio_wrapp{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #C99034;
+    padding: 30px 20px 18px;
+    align-items: flex-start;
+    margin-top: 0;
+}
+.checkbox_wrapp{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 18px;
+}
+
+.radio_wrapp label:last-child{
+    margin-bottom: 0;
+}
+
+.checkbox_wrapp label:last-child{
+    margin-bottom: 0;
+}
+
+
+.category_modal.filters .category_checkbox{
+    margin:0;
+
+}
+
+.category_modal.filters .category_checkbox label{
+    flex: 0;
+}
+
+.radio_wrapp.radio-buttons-2 .radio-button .custom-radio{
+width: 15px;
+height:15px;
+top: 2px;
+    left: 0;
+    background-color: transparent;
+    border: 1px solid #C99034;
+}
+
+.radio_wrapp.radio-buttons-2 .radio-button{
+    padding-left: 27px;
+    margin-bottom:20px;
+}
+
+.radio_wrapp.radio-buttons-2 .custom-radio:after{
+    background: transparent;
+    width:6px;
+    height: 6px;
+}
+
+.button_etc{
+    position: fixed;
+    right: 114px;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button_etc img{
+    width:40px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+
+.category_modal{
+    display: none;
+}
+
+
+.category_modal.active {
+display: block;
+}
+
+
+/* 식당 주 알림 점주 */
+
+.restaruat_alert_tab .tab-container{
+margin: 45px auto 32px;
+border: none;
+max-width: 1200px;
+}
+
+.restaruat_alert_tab .tab-container .tab-container__item{
+    flex: 0 0 auto;
+    width: 140px;
+    height: 40px;
+    /* padding: 8px 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2E2C29;
+    color: #C99034;
+    border: 1px solid #4D402B;
+    font-size: 18px;
+}
+
+.restaruat_alert_tab .tab-container .tab-container__item.active{
+    background-color: #BE8E30;
+
+}
+
+.restaruat_alert_tab .tab-container .tab-container__item.active .tab-container__item--title{
+    color: #fff !important;
+    font-weight: 700;
+
+}
+
+.restaruat_alert_tab .tab-container li:first-child{
+    margin-right: 16px;
+}
+
+.sell_end{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* 식당주 알림 팝업 */
+
+.modal-dialog-centered{
+    max-width: 70vw!important;
+    height: 515px!important;
+    max-width: 758px!important;
+}
+
+.aside_img{
+    width: 50%;
+
+}
+
+.aside_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.restaruat_modal_content{
+    padding: 24px;
+    width: 50%;
+}
+.restaruat_modal_content_write{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 130%;
+letter-spacing: -0.1px;
+color: #313131;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.insta_icon{
+    display: flex;
+    align-items: center;
+
+}
+.insta_like{
+justify-content: space-between;
+display: flex;
+align-items: center;
+}
+
+.insta_icon_wrapp{
+    width: 72px;
+    height: 28px;
+    border: 1px solid #E9E9E9;
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.insta_icon_wrapp:first-child{
+    margin-right: 6px;
+}
+.insta_icon_wrapp p{
+    font-family: 'Pretendard';
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+color: #8A8A8A;
+}
+.insta_icon_wrapp img{
+    margin-right: 6px;
+}
+
+.chat_name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.chat_name_title{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 100%;
+color: #262728;
+margin-right: 8px;
+}
+
+.chat_name_content{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+color: #262728;
+opacity: 0.7;
+
+}
+
+.chat_time{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+line-height: 100%;
+color: #A5A5A5;
+}
+
+.chat_list{
+    height: 200px;
+    overflow: auto;
+}
+
+.chat_list_content{
+    margin-bottom: 10px;
+}
+
+
+.aside_img p{
+    position: absolute;
+bottom: 1em;
+left: 1em;
+font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+color: #FFFFFF;
+}
+
+.restaurant_popup{
+    position: relative;;
+}
+
+.modal-body{
+    padding: 0!important;
+}
+
+.modal-content{
+    border-radius: 13px!important;
+}
+
+.comment_btn{
+    width: 58px;
+    height: 36px;
+    background-color:#D9D9D9;
+    color:#fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.input_comment {
+    position: relative;
+}
+.input_comment input{
+width:100%;
+height: 38px;
+border:1px solid #D8D8D8;
+padding: 10px 16px;
+}
+
+.input_comment input:focus{
+    border-color: #D8D8D8;
+    outline: none !important;
+}
+
+.input_comment input::placeholder{
+    color:#A2A2A2;
+    font-family: 'Pretendard';
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+}
+
+.chat_list{
+    -ms-overflow-style: none;
+ }
+ .chat_list::-webkit-scrollbar{
+   display:none;
+ }
+
+
+ .edit_delte_btn{
+    position: absolute;
+    bottom: -108px;
+    left: 50%;
+    transform: translate(-50%,0);
+ }
+
+ .edit_delte_btn p{
+    font-family: 'Pretendard';
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: rgba(255, 255, 255, 0.8);
+ }
+
+.close.side{
+    background-color: transparent;
+    margin-right: 0;
+    width: auto;
+    padding: 0;
+    margin-bottom: 150px;
+}
+
+.aside_btn{
+    position: absolute;
+    right: -40%;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aside_btn img{
+    width:40px;
+    height: 40px;
+}
+
+.scroll_btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll_btn img{
+    width:40px;
+    height: 40px;
+}
+
+.up_scroll{
+    margin-bottom: 24px;
+}
+
+.second_body{
+    height: 80px;    
+background: #FFFFFF;
+box-shadow: 12px 12px 60px 3px rgba(0, 0, 0, 0.12);
+border-radius: 2px;
+width: 200px;
+}
+
+.last_delete{
+    font-family: 'Pretendard'sans-serif;
+font-weight: 700;
+font-size: 14px;
+text-align: center;
+color: #EB0000;
+height: 40px;
+width:100%;
+}
+
+.cancle{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #414141;
+    height: 40px;
+width:100%;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+color: #414141;
+}
+
+.alarm_edit_number{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 126%;
+color: #004A80;
+margin-bottom: 16px;
+}
+
+.alarm_category_title{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 126%;
+    color: #262728;
+    margin-bottom: 10px;
+}
+
+.alarm_category_seclet{
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.alarm_category_seclet button{
+    width: calc(100% / 3);
+    height: 28px;
+    background-color: #D9D9D9;
+    color:#fff;
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.alarm_category_seclet button.active{
+    background-color:#252525;
+}
+
+.alarm_number_data .data_end{
+    font-family: 'Pretendard';
+font-weight: 400;
+font-size: 10px;
+color: #424242;
+}
+
+.alarm_number_data{
+    align-items: center;
+    margin-bottom: 22px;
+}
+.data_select.time{
+    width: 73px;
+}
+
+.data_select{
+    width: 146px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 98px;
+    font-family: 'Pretendard';
+font-weight: 500;
+font-size: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #252525;
+margin: 0 6px 0 5px;
+justify-content: center;
+}
+
+.alarm_title_input{
+    font-family: 'Pretendard';
+font-weight: 700;
+font-size: 18px;
+color: #252525;
+border-left-width:0;
+border-right-width:0;
+border-top-width:0;
+border-bottom-width:1;
+border-color: 1px solid #CECECE;
+width: 100%;
+}
+
+.input_sub_title{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 126%;
+color: #838383;
+margin-top: 6px;
+margin-bottom: 60px;
+}
+
+.alarm_content{
+    width: 100%;
+height: 127px;
+background: #F5F5F5;
+font-family: 'Pretendard';
+font-weight: 500;
+font-size: 12px;
+letter-spacing: -0.1px;
+color: #313131;
+border:none;
+resize: none;
+}
+
+.alarm_content:focus{
+    outline: 0;
+}
+
+.alarm-head{
+    margin:67px 0 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save_btn{
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #9C9C9C;
+    background: none;
+    margin-right: 40px;
+}
+
+.save_btn.upload_btn{
+    width: 140px;
+height: 40px;
+background: #3F3F3F;
+border-radius: 2px;
+font-family: 'Pretendard';
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.save_btn.upload_btn:focus{
+    background-color: #C99034;
+    color:#fff;
+}
+
+.modal_alarm_title{
+
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 126%;
+    color: #C99034;
+    
+}
+
+.img_upload_prev{
+background:#F5F5F5 url('../img/modal_1.png') no-repeat;
+width: 50%;
+background-position: center;
+}
+
+.sub_alarm_content{
+    font-family: 'Pretendard';
+font-weight: 700;
+font-size: 20px;
+line-height: 126%;
+text-align: center;
+color: #262728;
+margin:30px 0 8px;
+}
+
+.sub_img_descrition{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 126%;
+text-align: center;
+color: #838383;
+}
+
+.download_link img{
+    width:52px;
+    height: 52px;
+}
+
+.alarm_make{
+    max-width: 758px;
+    margin: 107px auto 0;
+}
+
+.restaruat_modal_content.alarm_plus{
+    background-color: #fff;
+}
+
+.img_upload_prev_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.alarm_title_input::placeholder{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 126%;
+color: #D9D9D9;
 }

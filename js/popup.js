@@ -1,10 +1,9 @@
-
+// Modal을 가져옵니다.
 var modals = document.getElementsByClassName("modal");
-
+// Modal을 띄우는 클래스 이름을 가져옵니다.
 var btns = document.getElementsByClassName("view_more");
-
+// Modal을 닫는 close 클래스를 가져옵니다.
 var spanes = document.getElementsByClassName("close");
-
 var funcs = [];
 
 // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
@@ -16,7 +15,10 @@ function Modal(num) {
             console.log(num);
         };
 
-
+        // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+        spanes[num].onclick = function () {
+            modals[num].style.display = "none";
+        };
     };
 }
 
@@ -37,19 +39,3 @@ window.onclick = function (event) {
         event.target.style.display = "none";
     }
 };
-
-// 원하는 Modal 수만큼 funcs 함수를 호출합니다.
-for (var j = 0; j < btns.length; j++) {
-    funcs[j]();
-}
-
-
-// Modal 영역 밖을 클릭하면 Modal을 닫습니다.
-window.onclick = function (event) {
-    if (event.target.className == "modal") {
-        event.target.style.display = "none";
-    }
-};
-
-
-

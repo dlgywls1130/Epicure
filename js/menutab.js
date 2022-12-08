@@ -21,5 +21,18 @@ const menu = document.querySelector('.menu');
 
 // 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
 toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
+    menu.classList.toggle('active');
+});
+
+
+
+
+//필터 클릭 팝업
+//Regular Javascript
+const filterBtn = document.querySelector('#popup');
+const filter = document.querySelector('#box');
+
+// 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
+filterBtn.addEventListener('click', () => {
+    filter.classList.toggle('active');
 });
