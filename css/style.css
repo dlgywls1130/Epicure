@@ -448,9 +448,9 @@ transition: color 0.4s ease-in-out;
     z-index: -1;
 }
 
-.main_img1{
-    height: 372px;
-    width: 287px;
+.main_img1 {
+    /* height: 372px; */
+    /* width: 287px;*/
 }
 
 .main.gold .main_img1 img{
@@ -465,16 +465,25 @@ transition: color 0.4s ease-in-out;
     left: 9%;
 }
 
-.main_img2{
+/* .main_img2{
     width:248px;
     height:237px;
+} */
+
+.bg-img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.main.gold .main_img2 img{
-    position: absolute;
-    bottom:-3.625rem;
-    left:32.125rem;
+.img2_main{
+position: absolute;
+    bottom: -4.625rem;
+    left: 30rem;
 }
+
 
 .main.gold .main_img2 .back_line{
     position: absolute;
@@ -483,10 +492,7 @@ transition: color 0.4s ease-in-out;
     left: 30rem;
 }
 
-.main.gold .main_img3{
-    width: 439.79px;
-    height: 442.79px;
-}
+
 
 .main.gold .main_img3 img{
     position: absolute;
@@ -512,10 +518,10 @@ transition: color 0.4s ease-in-out;
 
 
 /* main blue */
-.main.blue .main_img1{
+/* .main.blue .main_img1{
     width: 181px;
     height:216px;
-}
+} */
 
 .main.blue .main_img1 img{
 position: absolute;
@@ -531,10 +537,10 @@ left:0;
 }
 
 
-.main.blue .main_img4{
+/* .main.blue .main_img4{
     width: 54px;
     height:72px;
-}
+} */
 
 .main.blue .main_img4 img{
     position: absolute;
@@ -542,11 +548,11 @@ left:0;
     left: 200px;
 }
 
-.main.blue .main_img2{
+/* .main.blue .main_img2{
     width: 174px;
     height:115px;
 
-}
+} */
 
 .main.blue .main_img2 img{
     bottom: 20px;
@@ -562,10 +568,10 @@ left:0;
     bottom: -6%;
 }
 
-.main.blue .main_img3{
+/* .main.blue .main_img3{
     width: 522px;
     height:739px;
-}
+} */
 
 .main.blue .main_img3 img{
     top:-4.625rem;
@@ -611,38 +617,44 @@ left:0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 1rem 4rem;
 }
 
-.main.green .main_img1 img{
+.main.green .main_img1 .back_line{
     bottom:55px;
+    left: 4%;
     position: absolute;
 }
 
-.main.green .main_img2 img{
+.green_main_list{
+    position: absolute;
+    bottom: 46px;
+    left: 2%;
+}
+
+.main.green .main_img2 .back_line{
     top:0;
-    left:40%;
+    left: 28rem;
     position: absolute;
     transform: translate(-40%,0);
 }
 
-.main.green .main_img2 .back_line{
-    top: 0;
-    left: 42%;
+.green_main_list2{
+    top: 2rem;
+    left: 22rem;
     position: absolute;
 }
 
-.main.green .main_img3 img{
-    top: -16%;
-    right: 20%;
-    position: absolute;
-}
 
 .main.green .main_img3 .back_line{
-    top: 51%;
-    left: 46%;
+    top: 3rem;
+    left: 41rem;
     position: absolute;
-    transform: translate(0,-50%);
+}
+
+.green_main_list3{
+    top: -7rem;
+    left: 37rem;
+    position: absolute;
 }
 
 .main.green .main_title{
