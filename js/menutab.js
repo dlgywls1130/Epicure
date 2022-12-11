@@ -36,3 +36,6 @@ const filter = document.querySelector('#box');
 filterBtn.addEventListener('click', () => {
     filter.classList.toggle('active');
 });
+
+
+
