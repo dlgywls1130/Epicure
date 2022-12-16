@@ -652,8 +652,8 @@ left:0;
 }
 
 .green_main2_list3{
-    top: -7rem;
-    left: 37rem;
+    bottom: 0;
+    right: 30rem;
     position: absolute;
 }
 
@@ -3766,7 +3766,7 @@ color: rgba(201, 144, 52, 0.8);
 
 .green_bg_list3{
     position: absolute;
-    right: 1rem;
+    right: 31rem;
     bottom: 0;
 }
 
@@ -3899,6 +3899,46 @@ color: rgba(0,0,0,0.2);
 }
 
 
+.green_bg_list4{
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.green_bg_list5{
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.green_bg_list6{
+    position: absolute;
+    right: 12rem;
+    top: 44%;
+    transform: translate(0, -50%);
+}
+
+.green_main2_list4{
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.green_main2_list2{
+    top: 20%;
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
+
+.green_main2_list5{
+    top: 6.6rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 .list_restaurant_content{
     max-width: 1200px;
