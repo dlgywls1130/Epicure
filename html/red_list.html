@@ -1124,12 +1124,12 @@
                         </div>
     
                         <div class="list_filter">
-                            <div class="filter_group" id="popup">
+                            <div class="filter_group" id="popup1">
                                 <p>필터설정</p>
                                 <img src="../img/filter1.png">
                             </div>
                     
-                            <div class="category_modal green" id="box" >
+                            <div class="category_modal2 green" id="box1" >
                                 <div class="category_modal_title">
                                     <span>
                                         <img src="../img/info.png">
@@ -1514,6 +1514,7 @@
 
     <div class="green_list_ad">
         <div class="green_list_content">google add</div>
+        <img src="../img/close1.png">
     </div>
 
     <div class="list_restaurant_content">
@@ -2030,6 +2031,20 @@
                     el: ".swiper-scrollbar",
                     hide: true,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+                        //필터 클릭 팝업
+            //Regular Javascript
+            const filterButton = document.querySelector('#popup1');
+            const filterBox = document.querySelector('#box1');
+
+            // 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
+            filterButton.addEventListener('click', () => {
+                filterBox.classList.toggle('active');
             });
         </script>
     
