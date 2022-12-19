@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -162,7 +166,7 @@
 
                     </div>
 
-                    <button type="button" class="submit">가입하기</button>
+                    <button type="button" class="submit" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">가입하기</button>
 
                     <div class="login_sns">
                         <div class="simple_login">
@@ -280,7 +284,7 @@
 
                     </div>
 
-                    <button type="button" class="submit">가입하기</button>
+                    <button type="button" class="submit" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">가입하기</button>
 
 
                     <div class="login_sns">
@@ -355,6 +359,27 @@
         </div>
     </footer>
 
+
+    <div class="modal fade " id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabe4" tabindex="-1">
+        <div class="modal-dialog  modal-dialog-centered mypage_delete_popup">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal_delete mypage_close"  data-bs-dismiss="modal">
+                        <img src="../img/check_modal.png">
+                    </div>
+                    <div class="modal_txt">
+                        회원 가입 완료!
+                        <br>로그인 하시겠습니까?
+                    </div>
+                    <div class="modal_btn flex">
+                        <button onclick="location.href='../html/login.html'" class="delete-button">로그인</button>
+                        <div class="close membership_modal_close" data-bs-dismiss="modal">돌아가기</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/main.js"></script>
 </body>

@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -1034,7 +1036,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -1059,7 +1061,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -1084,7 +1086,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -1109,7 +1111,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -1134,7 +1136,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -1159,7 +1161,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -1184,7 +1186,7 @@
                                         <div class="description_navbar flex">
                                             <div class="description_title">김에피</div>
                                             <div class="delete">
-                                                <div class="view_more">
+                                                <div data-bs-toggle="modal" href="#exampleModalToggle10" role="button">
                                                     <img src="../img/delete.png">
                                                 </div>
 
@@ -2321,31 +2323,30 @@
 
 
 <!-- Modal -->
-<div class="modal">
-    <div class="modal-content">
-        
-        <div class="modal_wrapp">
-            <div class="modal_delete">
-                <img src="../img/modal_del.png">
-            </div>
-            <div class="modal_txt">
-                ‘가온'에 작성한 글을
-                <br>삭제하시겠습니까?
-            </div>
-            <div class="modeal_btn flex">
-                <div class="close">취소</div>
-                <div class="delete-button">삭제</div>
+<div class="modal fade " id="exampleModalToggle10" aria-hidden="true" aria-labelledby="exampleModalToggleLabe4" tabindex="-1">
+    <div class="modal-dialog  modal-dialog-centered mypage_delete_popup">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal_delete mypage_close"  data-bs-dismiss="modal">
+                    <img src="../img/modal_del.png">
+                </div>
+                <div class="modal_txt">
+                    ‘가온'에 작성한 글을
+                    <br>삭제하시겠습니까?
+                </div>
+                <div class="modal_btn flex">
+                    <div class="close" data-bs-dismiss="modal">취소</div>
+                    <div class="delete-button">삭제</div>
+                </div>
             </div>
         </div>
-
-
     </div>
 </div>
 
 
     <script src="../js/filter.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/popup.js" defer ></script>
+    <script src="../js/popup.js"></script>
 </body>
 
 </html>

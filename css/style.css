@@ -128,6 +128,14 @@
     display: flex;
 }
 
+ol, ul {
+    padding-left: 0!important;
+}
+
+a{
+text-decoration: none!important;
+}
+
 input[type=checkbox] {
     position: relative;
     background: #393939;
@@ -198,6 +206,7 @@ header{
     border-bottom: 2px solid;
     border-image: linear-gradient(90deg, rgba(38,39,40,1) 0%, rgba(38,39,40,1) 25%, rgba(255,200,112,1) 50%, rgba(38,39,40,1) 75%, rgba(38,39,40,1) 100%);
     border-image-slice: 1;
+    margin: 0;
 }
 
 .navbar_right{
@@ -1035,8 +1044,14 @@ left:0;
 .login{
     background-color: var(--gray-bg-color);
     position: relative;
-    height: 672px;
+    height: 79.4vh;
     width: 100%;
+}
+
+.login::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .login_content{
@@ -1271,6 +1286,23 @@ margin-bottom:1.5rem;
 
 /* membership */
 
+#membership .tab-container__item{
+    width: 127px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+}
+
+#membership a:focus,
+#membership a:active,
+#mebership a:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff!important;
+}
+
 .tab-container {
     display: flex;
     border-bottom:  1px solid #BE8E30;
@@ -1502,9 +1534,6 @@ display: block;
 
 /* mypage */
 
-.mypage{
-
-}
 
 
 .tab-container{
@@ -1524,6 +1553,11 @@ display: block;
 }
 
 #tab105 .mypage_write{
+    max-width: 719px;
+    margin: 24px auto 0;
+}
+
+#tab205 .mypage_write{
     max-width: 719px;
     margin: 24px auto 0;
 }
@@ -1665,7 +1699,7 @@ margin-top:24px ;
 
 .top_bg{
     width: 100%;
-    height: 275px;
+    height: 379px;
     background: #262728;
     position: absolute;
     z-index: -9;
@@ -1764,7 +1798,13 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   justify-content: center;
   display:flex;
   margin-right: 9px;
+
   }
+
+.close.membership_modal_close{
+    margin-right: 0px;
+    margin-left: 9px;
+}
   
   .close:hover {
     background-color: darkgray;
@@ -1789,19 +1829,33 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   }
 
 
-.modeal_btn{
-    margin-top: 39px;
+.modal_btn{
+    margin: 39px auto 25px;
+    justify-content: center;
 }
 
 
 .modal_wrapp{
     margin:32px auto 25px;
     text-align: center;
+
 }
 
 .modal_delete{
-    margin-bottom: 23px;
+    margin: 23px auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
 }
+
+.mypage_delete_popup .close,
+.mypage_delete_popup .delete-button{
+    width: 121px;
+    height: 44px;
+}
+
+
+
 
 .modal_txt{
     font-family: 'Pretendard',sans-serif;
@@ -2101,6 +2155,23 @@ justify-content: space-between;
 
 
 .radio-buttons-2 .radio-button {
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    flex: 1 0 50%;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+    font-family: 'Pretendard',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #fff;
+}
+
+
+.payment_card .radio-buttons-2 .radio-button {
     cursor: pointer;
     position: relative;
     padding-left: 40px;
@@ -2987,7 +3058,7 @@ color:#393939;
 
 .restaruat_alert{
     max-width: 1200px;
-    margin: 0 auto 20px;
+    margin: 70px auto 20px;
     font-family: 'Pretendard';
     font-weight: 600;
     font-size: 34px;
@@ -3033,7 +3104,11 @@ color: #FFFFFF;
 }
 
 .top_bg.restaurant{
-    height: 530px;
+    height: 427px;
+}
+
+.top_bg.restaurant_week{
+    height: 533px;
 }
 
 .filter_body.restaurant{
@@ -3260,10 +3335,14 @@ max-width: 1200px;
 }
 
 
+.modal-dialog-centered.mypage_delete_popup{
+    height: 254px!important;
+    max-width: 410px!important;
+}
+
 /* 식당주 알림 팝업 */
 
 .modal-dialog-centered{
-    max-width: 70vw!important;
     height: 515px!important;
     max-width: 758px!important;
 }
@@ -4493,7 +4572,7 @@ display: flex;
 justify-content: space-between;
 }
 
-.restaurant_img{
+.restaurant_detail_img{
 width: 485px;
 height: 364px;
 }
@@ -4745,6 +4824,8 @@ margin: 30px 0 20px;
 .menu_slide_wrap{
     display: flex;
     padding: 77px 76px 0 77px;
+    position: relative;
+    height: 537px;
 }
 
 .menu_content_title{
@@ -5101,8 +5182,26 @@ margin-bottom: 12px;
     width: 83px!important;
 }
 
+.detail .menu_slide_wrap .swiper-horizontal>.swiper-scrollbar, 
+.detail .menu_slide_wrap .swiper-scrollbar.swiper-scrollbar-horizontal{
+    transform: translate(-50%,0)!important;
+    position: absolute;
+    left: 50%!important;
+    bottom: 21px!important;
+    z-index: 50!important;
+    height: 3px!important;
+    width: 83px!important;
+}
+
 .menu_slide_wrap .swiper-scrollbar-drag{
     width: 30px!important;
+}
+
+.menu_slide_swiper{
+    position: absolute;
+    right: 0;
+    width: 600px;
+    overflow: visible;
 }
 
 /* mediaquery */

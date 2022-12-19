@@ -51,13 +51,11 @@ table {
 
 a{
     text-decoration-line: none;
+	text-decoration: none;
 }
+
 
 button{
 	outline: none;
 	border:none;
-}
-
-header{
-
 }
