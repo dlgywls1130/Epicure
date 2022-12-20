@@ -4944,7 +4944,7 @@ margin-left: 8px;
 }
 
 .ads_banner{
-    width: 1080px;
+    max-width: 1080px;
 height: 145px;
 background: rgba(255, 255, 255, 0.1);
 margin: 30px auto;
@@ -5409,7 +5409,7 @@ margin-bottom: 12px;
     position: absolute;
     right: 0;
     width: 600px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .pc_display{
@@ -6358,6 +6358,150 @@ width: 100%;
 
     .category_checkbox label{
         flex: 1 0 35%;
+    }
+
+    .detail_list_title_wrapp{
+        padding: 87px 19px 14px;
+    }
+
+    .detail_greenlist{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .restaurant_detail{
+        width:100%;
+        margin-top: 1rem;
+    }
+
+    .detail_restaurant{
+        width: 100%;
+        height: 712px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .restaurant_detail_wrapp{
+        margin-bottom: 1rem!important;
+    }
+
+    .restaurant_detail_img{
+        width:320px;
+        height:420px;
+    }
+
+    .restaurant_detail_img img{
+        width:100%;
+        height: 100%;
+    }
+
+    .restaurant_logo_roate{
+        display: none;
+    }
+
+    .top_btn{
+        left: 1.5rem;
+    }
+
+    .detail_tag{
+        height: 176px;
+        display: flex;
+        padding: 20px 16px 41px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail_tag_wrapp{
+        display: flex;
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .ads_banner{
+        margin: 0;
+    }
+
+    .history_content{
+        padding: 20px;
+    }
+
+    .menu_slide_swiper{
+        position: absolute;
+        right: 0px;
+        overflow: hidden;
+        top: 4rem;
+        width: 371px;
+        height: 245px;
+    }
+
+    .menu_slide .swiper-slide { 
+        width: 255px!important;
+        height: 191px;
+        margin-right: 16px;
+    }
+
+    .menu_slide .swiper-slide img{
+        width:100%;
+        height: 100%;
+    }
+
+    .menu_content_wrap{
+        display: none;
+    }
+
+    .menu_content{
+        width: 100%;
+    }
+
+    .menu_slide_wrap{
+        padding: 20px 12px;
+        height: 317px;
+    }
+
+    .menu_list_price{
+        padding: 20px 19px 32px;
+    }
+
+    .menu_list_price_content p:nth-child(n+5){
+        margin-bottom: 12px;
+    }
+
+    .menu_slide{
+        height:558px;
+    }
+
+    .detail_grade_wrap{
+        padding:24px 20px;
+    }
+
+    .detail_chat_input input{
+        width: 240px;
+    }
+
+    .detail_chat_grade{
+        padding: 0 20px;
+    }
+
+    .write_description{
+        
+    flex-direction: column;
+    }
+
+    .detail_chat_list .description_content,
+    .detail_chat_list .description_content.short{
+        background: url(../img/write_bg116.png) no-repeat;
+        width: 319px;
+        height: 154px;
+        background-size: cover;
+    }
+
+    .detail_history_wrap{
+        padding: 11px 13px;
+    }
+
+    .detail_chat_content{
+        height: 985px;
     }
 }
 
