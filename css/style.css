@@ -5367,6 +5367,10 @@ margin-bottom: 12px;
 .alarm_close{
     display: none;
 }
+
+.edit_btn img{
+margin: 0 0.5rem 0.5rem;
+}
 /* mediaquery */
 
 @media  screen and (max-width:768px) {
@@ -5940,6 +5944,51 @@ top: 1rem;
     .alarm_close{
         display: block;
         margin: 53px auto 100px;
+    }
+
+    .restaurant_popup .aside_img{
+        width: 100%;
+    }
+
+    .modal-dialog-centered{
+        height: auto!important;
+    }
+    
+    .modal-content.mombile_modal_popup{
+        width: 200px;
+        display: block;
+    }
+
+    .edit_delte_btn{
+        left: 15%;
+        padding-bottom: 13px;
+    }
+
+    .close.side{
+        bottom: -59rem;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    }
+
+    .aside_btn{
+        right: 0;
+    }
+
+    .modal-dialog{
+        margin: 70px 10px!important;
+    }
+
+    .scroll_btn{
+        display: flex;
+        transform: rotate(90deg);
+        position: absolute;
+        left: -13rem;
+        top: -18rem;
+    }
+
+    .up_scroll{
+        margin-bottom: 260px;
     }
 }
 
