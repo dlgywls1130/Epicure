@@ -5719,6 +5719,7 @@ left: 15rem;
 
     .filter_body{
         padding: 0 20px;
+        margin: 0 auto;
     }
 
     .filter_body .redlist{
@@ -5879,6 +5880,10 @@ top: 1rem;
 
     .button_etc{
         right: 10px;
+    }
+
+    .area_filter_container{
+        margin: 0 auto 20px;
     }
 }
 
