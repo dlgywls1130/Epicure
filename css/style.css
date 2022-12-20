@@ -5847,6 +5847,39 @@ top: 1rem;
     .green_last_list{
         display: none;
     }
+
+    /* 식당주알림 */
+    .week_body{
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .week_filter{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .week_filter .redlist{
+        max-height: 700px;
+        margin-right: 0;
+    }
+
+    .restaruat_alert{
+        font-size: 26px;
+        padding: 0 20px;
+    }
+
+    .area_filter_container{
+        padding: 0 20px;
+    }
+
+    .category_modal.filters{
+        right: 20px;
+    }
+
+    .button_etc{
+        right: 10px;
+    }
 }
 
 @media  (min-width:421px) and (max-width:1382px) {

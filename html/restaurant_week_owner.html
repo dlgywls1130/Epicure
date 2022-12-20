@@ -34,14 +34,19 @@
                                 <img src="../img/search.png" alt="search">
                             </a>
                         </li>
-                        <li>
+                        <li class="mobile_display">
                             <a href="javascript:void(0);">
                                 <img src="../img/login.png" alt="login">
                             </a>
                         </li>
-                        <li>
+                        <li class="mobile_display">
                             <a href="javascript:void(0);">
                                 <img src="../img/notice.png" alt="notice">
+                            </a>
+                        </li>
+                        <li class="pc_display">
+                            <a href="javascript:void(0);" >
+                                <img src="../img/fi_more-vertical.png" alt="more">
                             </a>
                         </li>
                     </ul>
@@ -1436,7 +1441,7 @@
 
     <div class="button_etc">
         <img src="../img/filter1.png">
-        <img src="../img/scroll.png">
+        <img src="../img/scroll.png" class="btn_scroll">
     </div>
 
     <!-- 알림화면 -->
@@ -1577,5 +1582,13 @@
     <script src="../js/main.js"></script>
     <script src="../js/popup.js"></script>
     <script src="../js/filter.js"></script>
+
+    <script>
+        const $topBtn = document.querySelector(".btn_scroll");
+
+        $topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });  
+        }
+    </script>
 </body>
 </html>
