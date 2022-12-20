@@ -5990,6 +5990,24 @@ top: 1rem;
     .up_scroll{
         margin-bottom: 260px;
     }
+
+    .login_content{
+        width: 324px;
+    padding: 18px;
+    border: 1px solid #be8e3059;
+    }
+
+    .login_main .submit{
+        width: 100%;
+    }
+
+    .login_main{
+        margin: 2rem 0 2rem;
+    }
+
+    .simple_login{
+        margin: 1rem 0 1.5rem;
+    }
 }
 
 @media  (min-width:769px) and (max-width:1382px) {
