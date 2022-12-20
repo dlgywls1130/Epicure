@@ -5357,6 +5357,16 @@ margin-bottom: 12px;
 .pc_display{
     display: none;
 }
+
+.upload_alarm{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.alarm_close{
+    display: none;
+}
 /* mediaquery */
 
 @media  screen and (max-width:420px) {
@@ -5884,6 +5894,52 @@ top: 1rem;
 
     .area_filter_container{
         margin: 0 auto 20px;
+    }
+
+    .save_btn{
+        display: none;
+    }
+
+    .save_btn.upload_btn{
+        display: block;
+        margin: 0;
+        color:rgba(225,225,225,0.2)
+    }
+
+    .restaurant_popup{
+        flex-direction: column;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 12px 12px 60px 3px rgb(0 0 0 / 12%);
+    }
+
+    .img_upload_prev{
+        width: 97%;
+        height: 508px;
+        padding: 12px;
+        border-radius: 16px;
+    }
+    
+    .restaruat_modal_content{
+        width: 100%;
+    }
+
+    .alarm_make{
+        margin: 68px 0 0;
+    }
+
+    .alarm-head{
+        padding: 0 16px;
+    }
+
+    .aside_img{
+        width: 97%;
+    }
+
+    .alarm_close{
+        display: block;
+        margin: 53px auto 100px;
     }
 }
 
