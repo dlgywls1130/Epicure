@@ -5369,7 +5369,7 @@ margin-bottom: 12px;
 }
 /* mediaquery */
 
-@media  screen and (max-width:420px) {
+@media  screen and (max-width:768px) {
 
     #main{
         height: 175px;
@@ -5943,7 +5943,7 @@ top: 1rem;
     }
 }
 
-@media  (min-width:421px) and (max-width:1382px) {
+@media  (min-width:769px) and (max-width:1382px) {
 
     .main.green{
         width: 100px;
