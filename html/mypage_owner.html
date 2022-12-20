@@ -666,22 +666,27 @@
         <h2 class="maypage_title">My page</h2>
         <div class="mypage_tab owner">
             <ul class="tab-container">
-                <li class="tab-container__item active" data-tab="tab200">
-                    <a class="tab-container__item--title" href="#">내식당정보</a>
+                <li>
+                    <ul class="tab_mypage tab_owner">
+                        <li class="tab-container__item active" data-tab="tab200">
+                            <a class="tab-container__item--title" href="#">내식당정보</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab201">
+                            <a class="tab-container__item--title" href="#">계정정보</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab202">
+                            <a class="tab-container__item--title" href="#">내가쓴글</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab203">
+                            <a class="tab-container__item--title" href="#">프리미엄회원</a>
+                        </li>
+                        <li class="tab-container__item last_tab" data-tab="tab204">
+                            <a class="tab-container__item--title" href="#">문의내역</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="tab-container__item" data-tab="tab201">
-                    <a class="tab-container__item--title" href="#">계정정보</a>
-                </li>
-                <li class="tab-container__item" data-tab="tab202">
-                    <a class="tab-container__item--title" href="#">내가쓴글</a>
-                </li>
-                <li class="tab-container__item" data-tab="tab203">
-                    <a class="tab-container__item--title" href="#">프리미엄회원</a>
-                </li>
-                <li class="tab-container__item" data-tab="tab204">
-                    <a class="tab-container__item--title" href="#">문의내역</a>
-                </li>
-                <li class="tab-container__item" data-tab="tab205">
+                
+                <li class="tab-container__item tab_bookmark" data-tab="tab205">
                     <a class="tab-container__item--title bookmark" href="#">
                         <img src="../img/fi_bookmark.png">
                     </a>
@@ -798,9 +803,9 @@
                                         <div class="photo_span">* 비율에 맞게 자동 크롭됩니다.</div>
                                     </div>
 
-                                    <div class="store_photo_uplod">
+                                    <!-- <div class="store_photo_uplod">
                                         <img src="../img/upload1.png">
-                                    </div>
+                                    </div> -->
                                     
                                 </div>
 
@@ -828,17 +833,17 @@
                                 <div class="title">카테고리 설정</div>
                                 <div class="category_btn">
                                     <div class="category_wrap">
-                                        <button type="button" class="category">음식 카테고리</button>
+                                        <button type="button" class="category" id="popup">음식 카테고리</button>
                                         <div class="cateory_chk_checked">양식</div>
                                     </div>
                                     <div class="category_wrap">
-                                        <button type="button" class="category">음식 카테고리</button>
+                                        <button type="button" class="category" id="popup1">상황 카테고리</button>
                                         <div class="cateory_chk_checked">프로포즈 / 쿠폰, 이벤트 / 분위기</div>
                                     </div>
                     
                                 </div>
 
-                                <div class="category_modal" style="display:none">
+                                <div class="category_modal"  id="box">
                                     <div class="category_modal_title">
                                         <span>
                                             <img src="../img/info.png">
@@ -877,14 +882,14 @@
                                     <button class="category_submit">적용하기</button>
                                 </div>
 
-                                <div class="category_modal situation">
+                                <div class="category_modal situation" id="box1" >
                                     <div class="category_modal_title">
                                         <span>
                                             <img src="../img/info.png">
                                         </span>
                                         상황 카테고리를 3개까지 선택 가능합니다.
                                     </div>
-                                    <div class="category_checkbox">
+                                    <div class="category_checkbox" >
                                         <label>
                                             <input type="checkbox"> 24시간
                                         </label>
@@ -927,7 +932,10 @@
 
                             </div>
 
-                            <button type="button" class="submit owner">정보 등록 요청하기</button>
+                            <div class="mobile_submit_btn">
+                                <button type="button" class="submit owner">정보 등록 요청하기</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -940,46 +948,68 @@
                             <div class="membership_content">
                                 <div class="infomation">
                                     <ul class="membership">
-                                        <li class="name">상호명</li>
-                                        <li class="input_answer"><input type="text" name="name" value="에피큐어"></li>
+                                        <li class="name">이름</li>
+                                        <li class="input_answer"><input type="text" name="name"></li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name">이메일</li>
-                                        <li class="input_answer"><input type="email" name="email" value="epicure@naver.com"></li>
+                                        <li class="input_answer">
+                                            <input type="email" name="email">
+                                            <ul class="etc_content">
+                                                <li class="overlap-btn">중복확인</li>
+                                                <li class="info">사용 가능한 이메일 입니다.</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name">비밀번호</li>
-                                        <li class="input_answer"><input type="password" name="password"></li>
-                                        <li class="info">+4~15자의 영문자, 숫자조합</li>
+                                        <li class="input_answer">
+                                            <input type="password" name="password">
+                                            <ul class="etc_content">
+                                                <li class="info">+4~15자의 영문자, 숫자조합</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name">비밀번호 확인</li>
-                                        <li class="input_answer"><input type="password" name="passworldcheck"></li>
-                                        <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                                        <li class="input_answer">
+                                            <input type="password" name="passworldcheck">
+                                            <ul class="etc_content">
+                                                <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name">전화번호</li>
-                                        <li class="input_answer"><input type="tel" name="call" value="02-123-4567"></li>
-                                        <li class="info">+선택사항</li>
+                                        <li class="input_answer">
+                                            <input type="tel" name="call">
+                                            <ul class="etc_content">
+                                                <li class="info">
+                                                    +선택사항
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name">휴대전화</li>
-                                        <li class="input_answer"><input type="tel" name="phone" value="010-1234-5678"></li>
+                                        <li class="input_answer"><input type="tel" name="phone"></li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name adress_title">주소</li>
                                         <li class="input_answer">
                                             <ul class="flex">
-                                                <li><input type="text" name="adress" class="post_number" value="123"></li>
-                                                <li><input type="text" name="adress" class="post_number" value="456"></li>
+                                                <li class="adress_number_input">
+                                                    <div  class="post_number" ><input type="text" name="adress"></div>
+                                                    <div class="post_number"><input type="text" name="adress" ></div>
+                                                </li>
+        
                                                 <li class="overlap-btn margin-left">우편번호 찾기</li>
                                             </ul>
-                                            <ul>
-                                                <li><input type="text" name="adress" class="adress" value="신림동 123-45
-                                                    "></li>
+                                            <ul class="adress_input_first">
+                                                <li><input type="text" name="adress" class="adress"></li>
                                             </ul>
                                             <ul class="flex sub_ul">
-                                                <li><input type="text" name="adress" class="adress_sub" value="에피아파트 1203호"></li>
+                                                <li class="adress_sub"><input type="text" name="adress"></li>
                                                 <li class="info">+나머지 상세주소 입력</li>
                                             </ul>
                                         </li>
@@ -1021,7 +1051,10 @@
 
                             </div>
 
-                            <button type="button" class="submit">수정하기</button>
+                            <div class="mobile_submit_btn">
+                                <button type="button" class="submit">수정하기</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1312,8 +1345,11 @@
                             <div class="infomation">
                                 <ul class="payment_cash_li">
                                     <li class="name">이름</li>
-                                    <li class="input_answer"><input type="text" name="name"></li>
-                                    <li class="info">입력하신 성함과 실제 입금자가 다를시 결제 승인이 어렵습니다.</li>        
+                                    <li class="input_answer">
+                                        <input type="text" name="name">
+                                        <div class="info">입력하신 성함과 실제 입금자가 다를시 결제 승인이 어렵습니다.</div>        
+                                    </li>
+                                    
                                 </ul>
                                 <ul class="payment_cash_li">
                                     <li class="name">연락처</li>
@@ -2349,9 +2385,20 @@
 </div>
 
 
-    <script src="../js/filter.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/popup.js"></script>
+<script type='text/javascript' src="../js/main.js"></script>
+    <script type='text/javascript' src="../js/popup.js"></script>
+    <script type='text/javascript' src="../js/filter.js"></script>
+    <script type='text/javascript' src="../js/menutab.js"></script>
+
+    <script>
+                    const filterButton = document.querySelector('#popup1');
+            const filterBox = document.querySelector('#box1');
+
+            // 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
+            filterButton.addEventListener('click', () => {
+                filterBox.classList.toggle('active');
+            });
+    </script>
 </body>
 
 </html>

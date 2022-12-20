@@ -1559,7 +1559,7 @@ width: 169px!important;
 }
 
 .name.adress_title{
-    padding:0.813rem 1.25rem 4.625rem;
+    padding:0.813rem 1.25rem 4.625rem!important;
 }
 
 .input_answer label{
@@ -1765,7 +1765,21 @@ margin-top:24px ;
     align-items: center;
 }
 
-.mypage .tab-container li:last-child {
+/* .mypage .tab-container li:last-child {
+    cursor: pointer;
+    display: flex;
+    width: 40px!important;
+    height: 40px;
+    background: #2E2C29;
+    color: #C99034;
+    margin-right: 16px;
+    border:1px solid #4D402B;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 56px;
+} */
+
+.tab-container__item.tab_bookmark{
     cursor: pointer;
     display: flex;
     width: 40px!important;
@@ -1778,7 +1792,6 @@ margin-top:24px ;
     margin-right: 0;
     margin-left: 56px;
 }
-
 .mypage  .tab-container .bookmark{
     width: 24px;
     height: 24px;
@@ -2295,6 +2308,7 @@ color: #545454;
 
 .payment_cash_li .input_answer{    
     padding: 0.625rem 1.063rem;
+    display: flex;
 }
 
 .payment_cash_li{
@@ -3323,6 +3337,7 @@ top: 2px;
 
 .category_modal.active {
 display: block;
+z-index:1;
 }
 
 .category_modal2.active {
@@ -5420,6 +5435,20 @@ margin: 0 0.5rem 0.5rem;
     width: 100%;
     align-items:center;
 }
+
+.tab_mypage{
+    display: flex;
+}
+
+.tab_mypage .tab-container__item.last_tab{
+    width: 140px!important;
+    height: 40px!important;
+}
+
+.mypage_tab.owner .tab_owner .tab-container__item{
+    width: 120px!important;
+}
+
 /* mediaquery */
 
 @media  screen and (max-width:768px) {
@@ -5624,6 +5653,39 @@ height: 55.12px;
     left: 45px;
     width: 14.04px;
     height: auto;
+    }
+
+    .mypage .tab-container__item{
+        width: 100px;
+        height: 40px;
+        margin-right: 0;
+        flex: none;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .tab_mypage .tab-container__item.last_tab{
+        width: 100px!important;
+        height: 40px!important;
+    }
+
+    .tab_mypage{
+        flex-wrap: wrap;
+        margin-left: 14px;
+    }
+
+    .mypage .tab-container{
+        align-items: flex-end;
+        padding: 0 14px;
+    }
+
+    .maypage_title{
+        margin-left: 20px;
+    }
+    
+    .description_content{
+        background: url(../img/write_bg3.png) no-repeat;
+        background-size: cover;
     }
 
     /* header */
@@ -6125,7 +6187,7 @@ top: 1rem;
     }
 
     .etc_content{
-        margin-top: 0.5rem;
+        margin-top: 0.1rem;
     }
 
     .membership .info{
@@ -6133,7 +6195,7 @@ top: 1rem;
     }
 
     .name.adress_title{
-        padding: 1.5rem 0.5rem 7rem;
+        padding: 1.5rem 0.5rem 7rem!important;
     }
 
     .overlap-btn.margin-left{
@@ -6154,6 +6216,148 @@ top: 1rem;
 
     .mobile_submit_btn{
         padding: 0 16px;
+    }
+
+    .payment_card .radio-buttons-2{
+    align-items: flex-start;
+    flex-direction: column;
+    }
+
+    /* mypage */
+
+    .select_card_wrap{
+        flex-direction: column;
+    }
+
+    .select_card_wrap .select_card{
+        width:100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+    
+    .payment_cash_li .input_answer{
+        flex-direction: column;
+    }
+
+    .payment_cash{
+        padding: 0;
+    }
+
+    .payment_cash_li li:first-child{
+        padding: 2rem 2.25rem;
+        width: 77%;
+    }
+
+    .account_copy{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .maypage_write_contnet{
+        padding:0;
+    }
+
+    .mypage_write{
+        margin: 24px 15px;
+    }
+
+    .text_top{
+        margin-left: 54px;
+    }
+
+    .write{
+        padding: 0 0.5rem;
+    }
+
+    .uplode_menu .setting_photo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store_photo_uplod{
+        width: 323px;
+height: 241px;
+    }
+
+    .uplode_store .setting_photo{
+        width: 323px;
+    height: 241px;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    margin: 0 auto;
+    }
+
+    .uploading_photo .uploaded{
+        width: 311px;
+height: 234px;
+margin-top: 7px;
+    }
+
+    .uplode_menu .photo_description{
+        width: 323px;
+        height: 244px;
+        background-size: cover;
+    }
+
+    .category_btn{
+        flex-direction: column;
+    }
+
+    .category{
+        width:160px;
+    }
+
+    .category_wrap:last-child{
+        margin-top: 1rem;
+    }
+
+    .mobile_submit_btn button{
+width: 100%;
+    }
+
+    .mypage ul:nth-child(7) .name{
+        padding: 1.5rem 0.5rem;
+    }
+
+    .mypage ul:nth-child(10) .name{
+        padding: 2.5rem 0.5rem;
+    }
+    .mypage .membership .name{
+        padding: 1.5rem 0.5rem;
+    }
+
+    .mypage_write.owner .membership.menu .menu_admin{
+        padding: 1rem 3rem 1rem 0.5rem;
+        height: 124px;
+        /* width: 126px; */
+        box-sizing: border-box
+    }
+
+    .mypage_write.owner .membership.menu .input_answer{
+        width: 64%;
+    height: 121.4px;
+    }
+
+    .category_modal{
+        width: 350px;
+        background: url(../img/pop_bg5.png) no-repeat;
+        background-size: cover;
+        height: 390px;
+        z-index: 11!important;
+    }
+
+    .category_modal.situation{
+        width: 365px;
+        height: 403px;
+        z-index: 12;
+        background: url(../img/pop_bg4.png) no-repeat;
+        background-size: cover;
+    }
+
+    .category_checkbox label{
+        flex: 1 0 35%;
     }
 }
 
