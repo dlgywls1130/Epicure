@@ -22,7 +22,7 @@
         <!-- navbar -->
         <nav id="navbar">
             <ul class="navbar">
-                <li>
+                <li id="toggle-button">
                     <img src="../img/menu.png" alt="menu">
                 </li>
                 <li>
@@ -35,14 +35,19 @@
                                 <img src="../img/search.png" alt="search">
                             </a>
                         </li>
-                        <li>
+                        <li class="mobile_display">
                             <a href="javascript:void(0);">
                                 <img src="../img/login.png" alt="login">
                             </a>
                         </li>
-                        <li>
+                        <li class="mobile_display">
                             <a href="javascript:void(0);">
                                 <img src="../img/notice.png" alt="notice">
+                            </a>
+                        </li>
+                        <li class="pc_display">
+                            <a href="javascript:void(0);" >
+                                <img src="../img/fi_more-vertical.png" alt="more">
                             </a>
                         </li>
                     </ul>
@@ -85,46 +90,71 @@
                         <div class="infomation">
                             <ul class="membership">
                                 <li class="name">이름</li>
-                                <li class="input_answer"><input type="text" name="name"></li>
+                                <li class="input_answer">
+                                    <input type="text" name="name">
+                                </li>
                             </ul>
                             <ul class="membership">
                                 <li class="name">이메일</li>
-                                <li class="input_answer"><input type="email" name="email"></li>
-                                <li class="overlap-btn">중복확인</li>
-                                <li class="info">사용 가능한 이메일 입니다.</li>
+                                <li class="input_answer">
+                                    <input type="email" name="email">
+                                    <ul class="etc_content">
+                                        <li class="overlap-btn">중복확인</li>
+                                        <li class="info">사용 가능한 이메일 입니다.</li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="membership">
                                 <li class="name">비밀번호</li>
-                                <li class="input_answer"><input type="password" name="password"></li>
-                                <li class="info">+4~15자의 영문자, 숫자조합</li>
+                                <li class="input_answer">
+                                    <input type="password" name="password">
+                                    <ul class="etc_content">
+                                        <li class="info">+4~15자의 영문자, 숫자조합</li>
+                                    </ul>
+                                </li>
+
                             </ul>
                             <ul class="membership">
                                 <li class="name">비밀번호 확인</li>
-                                <li class="input_answer"><input type="password" name="passworldcheck"></li>
-                                <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                                <li class="input_answer">
+                                    <input type="password" name="passworldcheck">
+                                    <ul class="etc_content">
+                                        <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="membership">
                                 <li class="name">전화번호</li>
-                                <li class="input_answer"><input type="tel" name="call"></li>
-                                <li class="info">+선택사항</li>
+                                <li class="input_answer">
+                                    <input type="tel" name="call">
+                                    <ul class="etc_content">
+                                        <li class="info">
+                                            +선택사항
+                                        </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                             <ul class="membership">
                                 <li class="name">휴대전화</li>
                                 <li class="input_answer"><input type="tel" name="phone"></li>
                             </ul>
-                            <ul class="membership">
+                            <ul class="membership tel_input">
                                 <li class="name adress_title">주소</li>
                                 <li class="input_answer">
                                     <ul class="flex">
-                                        <li><input type="text" name="adress" class="post_number"></li>
-                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li class="adress_number_input">
+                                            <div  class="post_number" ><input type="text" name="adress"></div>
+                                            <div class="post_number"><input type="text" name="adress" ></div>
+                                        </li>
+
                                         <li class="overlap-btn margin-left">우편번호 찾기</li>
                                     </ul>
-                                    <ul>
+                                    <ul class="adress_input_first">
                                         <li><input type="text" name="adress" class="adress"></li>
                                     </ul>
                                     <ul class="flex sub_ul">
-                                        <li><input type="text" name="adress" class="adress_sub"></li>
+                                        <li class="adress_sub"><input type="text" name="adress"></li>
                                         <li class="info">+나머지 상세주소 입력</li>
                                     </ul>
                                 </li>
@@ -166,8 +196,10 @@
 
                     </div>
 
-                    <button type="button" class="submit" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">가입하기</button>
-
+                    <div class="mobile_submit_btn">
+                        <button type="button" class="submit" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">가입하기</button>
+                    </div>
+                    
                     <div class="login_sns">
                         <div class="simple_login">
                             <div class="simple_login_title">간편로그인</div>
@@ -203,46 +235,71 @@
                         <div class="infomation">
                             <ul class="membership">
                                 <li class="name">상호명</li>
-                                <li class="input_answer"><input type="text" name="name"></li>
+                                <li class="input_answer">
+                                    <input type="text" name="name">
+                                </li>
                             </ul>
                             <ul class="membership">
                                 <li class="name">이메일</li>
-                                <li class="input_answer"><input type="email" name="email"></li>
-                                <li class="overlap-btn">중복확인</li>
-                                <li class="info">사용 가능한 이메일 입니다.</li>
+                                <li class="input_answer">
+                                    <input type="email" name="email">
+                                    <ul class="etc_content">
+                                        <li class="overlap-btn">중복확인</li>
+                                        <li class="info">사용 가능한 이메일 입니다.</li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="membership">
                                 <li class="name">비밀번호</li>
-                                <li class="input_answer"><input type="password" name="password"></li>
-                                <li class="info">+4~15자의 영문자, 숫자조합</li>
+                                <li class="input_answer">
+                                    <input type="password" name="password">
+                                    <ul class="etc_content">
+                                        <li class="info">+4~15자의 영문자, 숫자조합</li>
+                                    </ul>
+                                </li>
+
                             </ul>
                             <ul class="membership">
                                 <li class="name">비밀번호 확인</li>
-                                <li class="input_answer"><input type="password" name="passworldcheck"></li>
-                                <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                                <li class="input_answer">
+                                    <input type="password" name="passworldcheck">
+                                    <ul class="etc_content">
+                                        <li class="info err">비밀번호가 일치하지 않습니다. </li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="membership">
                                 <li class="name">전화번호</li>
-                                <li class="input_answer"><input type="tel" name="call"></li>
-                                <li class="info">+선택사항</li>
+                                <li class="input_answer">
+                                    <input type="tel" name="call">
+                                    <ul class="etc_content">
+                                        <li class="info">
+                                            +선택사항
+                                        </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                             <ul class="membership">
                                 <li class="name">휴대전화</li>
                                 <li class="input_answer"><input type="tel" name="phone"></li>
                             </ul>
-                            <ul class="membership">
+                            <ul class="membership tel_input">
                                 <li class="name adress_title">주소</li>
                                 <li class="input_answer">
                                     <ul class="flex">
-                                        <li><input type="text" name="adress" class="post_number"></li>
-                                        <li><input type="text" name="adress" class="post_number"></li>
+                                        <li class="adress_number_input">
+                                            <div  class="post_number" ><input type="text" name="adress"></div>
+                                            <div class="post_number"><input type="text" name="adress" ></div>
+                                        </li>
+
                                         <li class="overlap-btn margin-left">우편번호 찾기</li>
                                     </ul>
-                                    <ul>
+                                    <ul class="adress_input_first">
                                         <li><input type="text" name="adress" class="adress"></li>
                                     </ul>
                                     <ul class="flex sub_ul">
-                                        <li><input type="text" name="adress" class="adress_sub"></li>
+                                        <li class="adress_sub"><input type="text" name="adress"></li>
                                         <li class="info">+나머지 상세주소 입력</li>
                                     </ul>
                                 </li>
@@ -284,7 +341,10 @@
 
                     </div>
 
-                    <button type="button" class="submit" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">가입하기</button>
+                    <div class="mobile_submit_btn">
+                        <button type="button" class="submit" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">가입하기</button>
+                    </div>
+                    
 
 
                     <div class="login_sns">

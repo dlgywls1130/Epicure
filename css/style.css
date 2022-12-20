@@ -132,6 +132,11 @@ ol, ul {
     padding-left: 0!important;
 }
 
+dl, ol, ul{
+	margin-bottom: 0!important;
+}
+
+
 a{
 text-decoration: none!important;
 }
@@ -1451,7 +1456,36 @@ display: block;
 
 .membership .input_answer{
     padding: 0.625rem 1.063rem;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
 
+.etc_content{
+    display: flex;
+    align-items: center;
+}
+
+.etc_content .overlap-btn{
+    width: 97px!important;
+    margin-left: 9px;
+}
+
+.membership.tel_input{
+    display: flex;
+    flex-direction: row;
+}
+
+.membership.tel_input .info{
+    margin-left: 1rem;
+}
+
+.membership.tel_input .input_answer{
+    width: 60%;
+}
+
+.etc_content .info{
+    width: 100%!important;
 }
 
 .membership input{
@@ -1475,6 +1509,7 @@ display: block;
     border-radius: 40px;
     padding:0.188rem 0.625rem;
     text-align: center;
+    width: 100%;
 }
 
 .membership .info{
@@ -1492,8 +1527,15 @@ display: block;
     color: #DE4A4A;
 }
 
-.input_answer .post_number{
-    width: 69px;
+.input_answer .post_number input{
+    width: 69px!important;
+}
+
+.input_answer .post_number:first-child input{
+    margin-right: 21px;
+}
+.input_answer .sub_ul input{
+width: 169px!important;
 }
 
 .input_answer .adress{
@@ -1503,12 +1545,13 @@ display: block;
 
 .input_answer .sub_ul {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-top:0.5rem;
 }
 
 .input_answer .sub_ul .adress_sub{
     width: 169px!important;
-    margin-top:0.5rem;
+
 }
 
 .overlap-btn.margin-left{
@@ -5371,6 +5414,12 @@ margin-bottom: 12px;
 .edit_btn img{
 margin: 0 0.5rem 0.5rem;
 }
+
+.adress_number_input{
+    display: flex;
+    width: 100%;
+    align-items:center;
+}
 /* mediaquery */
 
 @media  screen and (max-width:768px) {
@@ -6007,6 +6056,104 @@ top: 1rem;
 
     .simple_login{
         margin: 1rem 0 1.5rem;
+    }
+
+
+    /* 회원가입 */
+    .top_banner{
+        flex-direction: column;
+    }
+
+    .banner_text{
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+
+    #membership{
+        padding: 0 18px 115px;
+    }
+
+    .join_content{
+        width: 100%;
+    }
+
+    #membership .tab-container{
+        justify-content: flex-start;
+    }
+
+    #membership .submit{
+        width: 100%;
+    }
+
+    .membership{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+
+
+    .etc_content .overlap-btn{
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    .input_answer .flex{
+        flex-direction: column;
+    }
+
+    .adress_input_first{
+        width: 100%!important;
+    }
+
+    
+    .adress_input_first li{
+        width: 100%!important;
+    }
+
+    .adress_input_first li input{
+        width: 100%!important;
+    }
+
+    .membership .name{
+        padding: 2rem 0.5rem;
+        width: 36%!important;
+    }
+
+    .membership .input_answer{
+        width: 64%;
+        padding: 0.5rem 0.6rem;
+    }
+
+    .etc_content{
+        margin-top: 0.5rem;
+    }
+
+    .membership .info{
+        font-size: 10px;
+    }
+
+    .name.adress_title{
+        padding: 1.5rem 0.5rem 7rem;
+    }
+
+    .overlap-btn.margin-left{
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 97px;
+
+    }
+    
+    .membership.tel_input .info{
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+
+    .membership_content{
+        padding: 0;
+    }
+
+    .mobile_submit_btn{
+        padding: 0 16px;
     }
 }
 

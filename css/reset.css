@@ -59,3 +59,7 @@ button{
 	outline: none;
 	border:none;
 }
+
+dl, ol, ul{
+	margin-bottom: 0;
+}
