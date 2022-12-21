@@ -194,6 +194,28 @@ z-index: 2;
     cursor: pointer;
 }
 
+
+/* 임의의 영역 생성 */
+
+/* 아래의 모든 코드는 영역::코드로 사용 */
+.tab-container::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+    /* 스크롤바의 너비 */
+}
+
+.tab-container::-webkit-scrollbar-thumb {
+    height: 10px;
+    /* 스크롤바의 길이 */
+    background: #C99034;
+    /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.tab-container::-webkit-scrollbar-track {
+    background: #383a3c;
+    /*스크롤바 뒷 배경 색상*/
+}
 /* ================= main ==================== */
 
 header{
@@ -233,74 +255,29 @@ header{
 position: relative;
 }
 
-.menu_list{
-width: 1400px;
-margin: 0 auto;
-background: #262728;
-border: 1px solid #C99034;
-box-shadow: 0px 0px 100px rgb(0 0 0 / 40%);
-border-radius: 1px;
-position: absolute;
-z-index: 9;
-left: 50%;
-transform: translate(-50%,0);
-}
-
-.menu_list ul{
-padding:34px 34px;
-position: relative;
-}
-
-.main_menu_title{
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-color: #C99034;
-margin: 36px 34px;
-}
-
-.main_menu_title.active{
-background: #C99034;
-width: 127px;
-height: 37px;
-position: absolute;
-left: -14px;
-top: 0;
-font-family: 'Pretendard';
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-color: #262728;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.tabs .tab {
-  border: 1px solid #ccc;
-      background-color: #262728;
-      width: 6%;
-      height: 280px;
-      /* margin-left: 3%; */
-      padding: 26px 21px 32px 0;
-      border: 1px solid #C99034;
-      position: relative;
-
+.menu_wrap{
+    background-color: #262728;
+    border: 1px solid #C99034;
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 9;
 }
 
 
-#toggle-button{
-        cursor: pointer;
-}
-.menu{
-        display: none;
+
+.menu.tabs .tabcontent{
+    max-width: 1300px;
+    overflow: hidden;
 }
 
-
-.menu.active {
-  display: block;
+.tab{
+    padding: 26px 21px 32px 0;
+    border-right: 1px solid #C99034;
+    position: relative;
+    /* width: 140px; */
 }
 
 .tabs .tab button {
@@ -308,24 +285,21 @@ justify-content: center;
     background-color: transparent;
     color: black;
     padding: 20px 0 20px 21px;
-    width: 90%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-    margin-left: -3%;
-    font-family: 'Pretendard';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #C99034;
-
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #C99034;
 }
 
 .tabs .tab button:hover {
-background-color: none;
+    background-color: none;
 }
 
 .tabs .tab button.active {
@@ -338,19 +312,29 @@ background-color: none;
     justify-content: flex-start;
 }
 
-.tabcontent {
-  padding: 0px 12px;
-  border: 1px solid #C99034;
-  width: 85%;
-  border-left: none;
-  height: 280px;
-  background: #262728;
+
+#menu .tab-container{
+    display: flex;
+    border-bottom: 1px solid #3E3729;
+    margin: 20px 10px 0;
+    padding-bottom: 8px;
+    width: 100%;
+    max-width: none;
+    overflow: auto;
+    flex-wrap: nowrap;
 }
+
+
+.menu.tabs .tab-container__item{
+    flex: 1 0 auto;
+    margin-right: 40px;
+}
+
 
 .menu .sub_menu{
     display: flex;
     flex-wrap: wrap;
-    margin: 45px 50px;
+    margin: 20px 10px 0 50px;
 }
 
 .menu .sub_menu li{
@@ -380,13 +364,6 @@ background-color: none;
 }
 
 
-#menu .tab-container {
-    display: flex;
-    border-bottom: 1px solid #3E3729;
-    margin: 50px auto 0;
-    padding-bottom: 8px;
-}
-
 .menu .tab-container__item.active .tab-container__item--title{
     color:#fff;
 }
@@ -412,13 +389,91 @@ color: #fff;
 transition: color 0.4s ease-in-out;
 }
 
+/* .menu_list{
+width: 1400px;
+margin: 0 auto;
+background: #262728;
+border: 1px solid #C99034;
+box-shadow: 0px 0px 100px rgb(0 0 0 / 40%);
+border-radius: 1px;
+position: absolute;
+z-index: 9;
+left: 50%;
+transform: translate(-50%,0);
+} */
 
-.menu_wrap{
-  display: flex;
-      justify-content: center;
-      position: absolute;
-      z-index: 9;
+/* .menu_list ul{
+padding:34px 34px;
+position: relative;
+} */
+
+.main_menu_title{
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #C99034;
+margin: 36px 34px;
 }
+
+.main_menu_title.active{
+background: #C99034;
+width: 127px;
+height: 37px;
+position: absolute;
+left: -14px;
+top: 0;
+font-family: 'Pretendard';
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #262728;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.menu_list{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#toggle-button{
+        cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+.menu.tabs{
+max-width: 1450px;
+margin: 0 auto;
+}
+
+.menu.active {
+    display: block;
+}
+
+
+
+
+
+
+/*  .tabcontent
+  padding: 0px 12px;
+  border: 1px solid #C99034;
+  width: 85%;
+  border-left: none;
+  height: 280px;
+  background: #262728; */
+
+
+
+
+
 /* main */
 
 #main{
@@ -6502,6 +6557,80 @@ width: 100%;
 
     .detail_chat_content{
         height: 985px;
+    }
+
+
+}
+
+
+@media  screen and (max-width:1048px) {
+    .menu_wrap{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .tab{
+        display: flex;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #C99034;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .tabs .tab button.active{
+        background-color: #C99034;
+        color: #262728;
+        height: 37px;
+        display: flex;
+        align-items: center;
+        width: 73px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .tabs .tab button{
+        display: block;
+        background-color: transparent;
+        color: black;
+        /* padding: 20px 0 20px 21px; */
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #C99034;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+
+    .tabcontent_wrap{
+        width: 100%;
+    }
+
+    .tabcontent{
+        display: block;
+        max-width: 100%;
+    }
+
+    #menu .tab-container{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .menu .sub_menu li{
+        flex: 0 1 118px;
     }
 }
 

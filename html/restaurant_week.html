@@ -17,196 +17,2302 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav id="navbar">
-            <ul class="navbar">
-                <li id="toggle-button">
-                    <img src="../img/menu.png" alt="menu">
+            <nav id="navbar">
+                <ul class="navbar">
+                    <li id="toggle-button">
+                        <img src="../img/menu.png" alt="menu">
+                    </li>
+                    <li>
+                        <img src="../img/logo.png" alt="logo">
+                    </li>
+                    <li>
+                        <ul class="navbar_right">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/search.png" alt="search">
+                                </a>
+                            </li>
+                            <li class="mobile_display">
+                                <a href="javascript:void(0);">
+                                    <img src="../img/login.png" alt="login">
+                                </a>
+                            </li>
+                            <li class="mobile_display">
+                                <a href="javascript:void(0);">
+                                    <img src="../img/notice.png" alt="notice">
+                                </a>
+                            </li>
+                            <li class="pc_display">
+                                <a href="javascript:void(0);" >
+                                    <img src="../img/fi_more-vertical.png" alt="more">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+                    <!-- menu -->
+            <div class="menu tabs" id="menu">
+                <div class="menu_wrap">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'area')" id="defaultOpen">지역별</button>
+                        <button class="tablinks" onclick="openTab(event, 'city')">역세권</button>
+                        <button class="tablinks" onclick="openTab(event, 'taste')">맛집촌</button>
+                        <button class="tablinks" onclick="openTab(event, 'locate')">위치기반</button>
+                    </div>
+    
+                    <!-- <ul class="tab-container menu_list">
+                        <li class="tab-container__item  active " data-tab="tab1">
+                            <a class="tab-container__item--title main_menu_title" href="#">지역별</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab2">
+                            <a class="tab-container__item--title main_menu_title" href="#">역세권</a>
+                        </li>
+                        <li class="tab-container__item" data-tab="tab3">
+                            <a class="tab-container__item--title main_menu_title" href="#">맛집존</a>
+                        </li>
+                        <li class="tab-container__item " data-tab="tab4">
+                            <a class="tab-container__item--title main_menu_title" href="#">위치기반</a>
+                        </li>
+                    </ul> -->
+    
+    
+                    <div class="tabcontent_wrap">
+                    <!-- 지역별 -->
+                        <div class="tabcontent" id="area">
+                            <ul class="tab-container">
+                                <li class="tab-container__item active" data-tab="tab1">
+                                    <a class="tab-container__item--title" href="#">서울</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab2">
+                                    <a class="tab-container__item--title" href="#">경기</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab3">
+                                    <a class="tab-container__item--title" href="#">인천</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab4">
+                                    <a class="tab-container__item--title" href="#">대전</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab5">
+                                    <a class="tab-container__item--title" href="#">대구</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab6">
+                                    <a class="tab-container__item--title" href="#">울산</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab7">
+                                    <a class="tab-container__item--title" href="#">부산</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab8">
+                                    <a class="tab-container__item--title" href="#">강원</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab9">
+                                    <a class="tab-container__item--title" href="#">충북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab10">
+                                    <a class="tab-container__item--title" href="#">충남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab11">
+                                    <a class="tab-container__item--title" href="#">전북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab12">
+                                    <a class="tab-container__item--title" href="#">전남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab13">
+                                    <a class="tab-container__item--title" href="#">경북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab14">
+                                    <a class="tab-container__item--title" href="#">경남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab15">
+                                    <a class="tab-container__item--title" href="#">제주</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab16">
+                                    <a class="tab-container__item--title" href="#">세종</a>
+                                </li>
+                            </ul>
+    
+                            <ul class="content-container">
+                                <li id="tab1" class="content-container__content target">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab2" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab3" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab4" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab5" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab6" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab7" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab8" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab9" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab10" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab11" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab12" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab13" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab14" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab15" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab16" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    <!-- 역세권 -->
+                        <div class="tabcontent" id="city">
+                            <ul class="tab-container">
+                                <li class="tab-container__item active" data-tab="tab17">
+                                    <a class="tab-container__item--title" href="#">1호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab18">
+                                    <a class="tab-container__item--title" href="#">2호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab19">
+                                    <a class="tab-container__item--title" href="#">3호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab20">
+                                    <a class="tab-container__item--title" href="#">4호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab21">
+                                    <a class="tab-container__item--title" href="#">5호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab22">
+                                    <a class="tab-container__item--title" href="#">6호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab23">
+                                    <a class="tab-container__item--title" href="#">7호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab24">
+                                    <a class="tab-container__item--title" href="#">8호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab25">
+                                    <a class="tab-container__item--title" href="#">9호선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab26">
+                                    <a class="tab-container__item--title" href="#">수인분당선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab27">
+                                    <a class="tab-container__item--title" href="#">신분당선 </a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab28">
+                                    <a class="tab-container__item--title" href="#">경의중앙선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab29">
+                                    <a class="tab-container__item--title" href="#">경춘선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab30">
+                                    <a class="tab-container__item--title" href="#">우이신설선</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab31">
+                                    <a class="tab-container__item--title" href="#">김포골드라인</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab32">
+                                    <a class="tab-container__item--title" href="#">공항철도</a>
+                                </li>
+                            </ul>     
+    
+                            <ul class="content-container">
+                                <li id="tab17" class="content-container__content target">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab18" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab19" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab20" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab21" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="ta22" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab23" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab24" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab25" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab26" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab27" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab28" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab29" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="ta30" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab31" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab32" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>인천(1)</li>
+                                        <li>동인천(22)</li>
+                                        <li>도원(2)</li>
+                                        <li>제물포(0)</li>
+                                        <li>도화(0)</li>
+                                        <li>주안(2)</li>
+                                        <li>간석(1)</li>
+                                        <li>동암(1)</li>
+                                        <li>부평(1)</li>
+                                        <li>부개(0)</li>
+                                        <li>송내(2)</li>
+                                        <li>중동(2)</li>
+                                        <li>부천(1)</li>
+                                        <li>소사(0)</li>
+                                        <li>역곡(1)</li>
+                                        <li>온수(0)</li>
+                                        <li>개봉(0)</li>
+                                        <li>구일(0)</li>
+                                        <li>구로(0)</li>
+                                        <li>가리봉(0)</li>
+                                        <li>독산(0)</li>
+                                        <li>금천구청(2)</li>
+                                        <li>석수(0)</li>
+                                        <li>관악(2)</li>
+                                        <li>안양(0)</li>
+                                    </ul>
+                                </li>
+    
+                            </ul>
+                        </div>
+    
+    
+                        <!-- 맛집촌 -->
+                        <div class="tabcontent" id="taste">
+                            
+                            <ul class="tab-container">
+                                <li class="tab-container__item active" data-tab="tab33">
+                                    <a class="tab-container__item--title" href="#">서울</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab34">
+                                    <a class="tab-container__item--title" href="#">경기</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab35">
+                                    <a class="tab-container__item--title" href="#">인천</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab36">
+                                    <a class="tab-container__item--title" href="#">대전</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab37">
+                                    <a class="tab-container__item--title" href="#">대구</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab38">
+                                    <a class="tab-container__item--title" href="#">울산</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab39">
+                                    <a class="tab-container__item--title" href="#">부산</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab40">
+                                    <a class="tab-container__item--title" href="#">강원</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab41">
+                                    <a class="tab-container__item--title" href="#">충북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab42">
+                                    <a class="tab-container__item--title" href="#">충남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab43">
+                                    <a class="tab-container__item--title" href="#">전북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab44">
+                                    <a class="tab-container__item--title" href="#">전남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab45">
+                                    <a class="tab-container__item--title" href="#">경북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab46">
+                                    <a class="tab-container__item--title" href="#">경남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab47">
+                                    <a class="tab-container__item--title" href="#">제주</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab48">
+                                    <a class="tab-container__item--title" href="#">세종</a>
+                                </li>
+                            </ul>
+    
+                            <ul class="content-container">
+                                <li id="tab33" class="content-container__content target">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab34" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab35" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab36" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab37" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab38" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab39" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab40" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab41" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab42" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab43" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab44" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab45" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab46" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab47" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab48" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- 위치기반 -->
+                        <div class="tabcontent" id="locate">
+                            <ul class="tab-container">
+                                <li class="tab-container__item active" data-tab="tab49">
+                                    <a class="tab-container__item--title" href="#">서울</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab50">
+                                    <a class="tab-container__item--title" href="#">경기</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab51">
+                                    <a class="tab-container__item--title" href="#">인천</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab52">
+                                    <a class="tab-container__item--title" href="#">대전</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab53">
+                                    <a class="tab-container__item--title" href="#">대구</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab54">
+                                    <a class="tab-container__item--title" href="#">울산</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab55">
+                                    <a class="tab-container__item--title" href="#">부산</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab56">
+                                    <a class="tab-container__item--title" href="#">강원</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab57">
+                                    <a class="tab-container__item--title" href="#">충북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab58">
+                                    <a class="tab-container__item--title" href="#">충남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab59">
+                                    <a class="tab-container__item--title" href="#">전북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab60">
+                                    <a class="tab-container__item--title" href="#">전남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab61">
+                                    <a class="tab-container__item--title" href="#">경북</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab62">
+                                    <a class="tab-container__item--title" href="#">경남</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab63">
+                                    <a class="tab-container__item--title" href="#">제주</a>
+                                </li>
+                                <li class="tab-container__item" data-tab="tab64">
+                                    <a class="tab-container__item--title" href="#">세종</a>
+                                </li>
+                            </ul>
+    
+                            <ul class="content-container">
+                                <li id="tab49" class="content-container__content target">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab50" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab51" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab52" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab53" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab54" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab55" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab56" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab57" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab58" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab59" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab60" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab61" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab62" class="content-container__content">
+                                    <ul class="sub_menu">
+                                        <li>강남구(367)</li>
+                                        <li>강동구(22)</li>
+                                        <li>강북구(14)</li>
+                                        <li>강서구(17)</li>
+                                        <li>관악구(30)</li>
+                                        <li>광진구(31)</li>
+                                        <li>구로구(12)</li>
+                                        <li>금전구(11)</li>
+                                        <li>노원구(11)</li>
+                                        <li>도봉구(11)</li>
+                                        <li>동대문구(37)</li>
+                                        <li>동작구(18)</li>
+                                        <li>마포구(209)</li>
+                                        <li>서대문구(69)</li>
+                                        <li>서초구(110)</li>
+                                        <li>성동구(42)</li>
+                                        <li>성북구(46)</li>
+                                        <li>송파구(50)</li>
+                                        <li>양천구(21)</li>
+                                        <li>영등포구(85)</li>
+                                        <li>용산구(160)</li>
+                                        <li>은평구(20)</li>
+                                        <li>종로구(178)</li>
+                                        <li>중구(197)</li>
+                                        <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab63" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                                <li id="tab64" class="content-container__content">
+                                    <ul class="sub_menu">
+                                    <li>강남구(367)</li>
+                                    <li>강동구(22)</li>
+                                    <li>강북구(14)</li>
+                                    <li>강서구(17)</li>
+                                    <li>관악구(30)</li>
+                                    <li>광진구(31)</li>
+                                    <li>구로구(12)</li>
+                                    <li>금전구(11)</li>
+                                    <li>노원구(11)</li>
+                                    <li>도봉구(11)</li>
+                                    <li>동대문구(37)</li>
+                                    <li>동작구(18)</li>
+                                    <li>마포구(209)</li>
+                                    <li>서대문구(69)</li>
+                                    <li>서초구(110)</li>
+                                    <li>성동구(42)</li>
+                                    <li>성북구(46)</li>
+                                    <li>송파구(50)</li>
+                                    <li>양천구(21)</li>
+                                    <li>영등포구(85)</li>
+                                    <li>용산구(160)</li>
+                                    <li>은평구(20)</li>
+                                    <li>종로구(178)</li>
+                                    <li>중구(197)</li>
+                                    <li>중량구(11)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+        <!-- <div class="tabcontent" id="area">
+            <ul class="tab-container">
+                <li class="tab-container__item active" data-tab="tab1">
+                    <a class="tab-container__item--title" href="#">서울</a>
                 </li>
-                <li>
-                    <img src="../img/logo.png" alt="logo">
+                <li class="tab-container__item" data-tab="tab2">
+                    <a class="tab-container__item--title" href="#">경기</a>
                 </li>
-                <li>
-                    <ul class="navbar_right">
-                        <li>
-                            <a href="javascript:void(0);">
-                                <img src="../img/search.png" alt="search">
-                            </a>
-                        </li>
-                        <li class="mobile_display">
-                            <a href="javascript:void(0);">
-                                <img src="../img/login.png" alt="login">
-                            </a>
-                        </li>
-                        <li class="mobile_display">
-                            <a href="javascript:void(0);">
-                                <img src="../img/notice.png" alt="notice">
-                            </a>
-                        </li>
-                        <li class="pc_display">
-                            <a href="javascript:void(0);" >
-                                <img src="../img/fi_more-vertical.png" alt="more">
-                            </a>
-                        </li>
+                <li class="tab-container__item" data-tab="tab3">
+                    <a class="tab-container__item--title" href="#">인천</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab4">
+                    <a class="tab-container__item--title" href="#">대전</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab5">
+                    <a class="tab-container__item--title" href="#">대구</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab6">
+                    <a class="tab-container__item--title" href="#">울산</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab7">
+                    <a class="tab-container__item--title" href="#">부산</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab8">
+                    <a class="tab-container__item--title" href="#">강원</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab9">
+                    <a class="tab-container__item--title" href="#">충북</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab10">
+                    <a class="tab-container__item--title" href="#">충남</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab11">
+                    <a class="tab-container__item--title" href="#">전북</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab12">
+                    <a class="tab-container__item--title" href="#">전남</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab13">
+                    <a class="tab-container__item--title" href="#">경북</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab14">
+                    <a class="tab-container__item--title" href="#">경남</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab15">
+                    <a class="tab-container__item--title" href="#">제주</a>
+                </li>
+                <li class="tab-container__item" data-tab="tab16">
+                    <a class="tab-container__item--title" href="#">세종</a>
+                </li>
+            </ul>
+    
+            <ul class="content-container">
+                <li id="tab1" class="content-container__content target">
+                    <ul class="sub_menu">
+                        <li>강남구(367)</li>
+                        <li>강동구(22)</li>
+                        <li>강북구(14)</li>
+                        <li>강서구(17)</li>
+                        <li>관악구(30)</li>
+                        <li>광진구(31)</li>
+                        <li>구로구(12)</li>
+                        <li>금전구(11)</li>
+                        <li>노원구(11)</li>
+                        <li>도봉구(11)</li>
+                        <li>동대문구(37)</li>
+                        <li>동작구(18)</li>
+                        <li>마포구(209)</li>
+                        <li>서대문구(69)</li>
+                        <li>서초구(110)</li>
+                        <li>성동구(42)</li>
+                        <li>성북구(46)</li>
+                        <li>송파구(50)</li>
+                        <li>양천구(21)</li>
+                        <li>영등포구(85)</li>
+                        <li>용산구(160)</li>
+                        <li>은평구(20)</li>
+                        <li>종로구(178)</li>
+                        <li>중구(197)</li>
+                        <li>중량구(11)</li>
+                    </ul>
+                </li>
+                <li id="tab2" class="content-container__content">
+                    <ul class="sub_menu">
+                        <li>강남구(367)</li>
+                        <li>강동구(22)</li>
+                        <li>강북구(14)</li>
+                        <li>강서구(17)</li>
+                        <li>관악구(30)</li>
+                        <li>광진구(31)</li>
+                        <li>구로구(12)</li>
+                        <li>금전구(11)</li>
+                        <li>노원구(11)</li>
+                        <li>도봉구(11)</li>
+                        <li>동대문구(37)</li>
+                        <li>동작구(18)</li>
+                        <li>마포구(209)</li>
+                        <li>서대문구(69)</li>
+                        <li>서초구(110)</li>
+                        <li>성동구(42)</li>
+                        <li>성북구(46)</li>
+                        <li>송파구(50)</li>
+                        <li>양천구(21)</li>
+                        <li>영등포구(85)</li>
+                        <li>용산구(160)</li>
+                        <li>은평구(20)</li>
+                        <li>종로구(178)</li>
+                        <li>중구(197)</li>
+                        <li>중량구(11)</li>
+                    </ul>
+                </li>
+                <li id="tab3" class="content-container__content">
+                    <ul class="sub_menu">
+                        <li>강남구(367)</li>
+                        <li>강동구(22)</li>
+                        <li>강북구(14)</li>
+                        <li>강서구(17)</li>
+                        <li>관악구(30)</li>
+                        <li>광진구(31)</li>
+                        <li>구로구(12)</li>
+                        <li>금전구(11)</li>
+                        <li>노원구(11)</li>
+                        <li>도봉구(11)</li>
+                        <li>동대문구(37)</li>
+                        <li>동작구(18)</li>
+                        <li>마포구(209)</li>
+                        <li>서대문구(69)</li>
+                        <li>서초구(110)</li>
+                        <li>성동구(42)</li>
+                        <li>성북구(46)</li>
+                        <li>송파구(50)</li>
+                        <li>양천구(21)</li>
+                        <li>영등포구(85)</li>
+                        <li>용산구(160)</li>
+                        <li>은평구(20)</li>
+                        <li>종로구(178)</li>
+                        <li>중구(197)</li>
+                        <li>중량구(11)</li>
                     </ul>
                 </li>
             </ul>
-        </nav>
-
-        <!-- menu -->
-        <div class="menu tabs" id="menu">
-            <div class="menu_wrap">
-                <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'area')" id="defaultOpen">지역별</button>
-                    <button class="tablinks" onclick="openTab(event, 'city')">역세권</button>
-                    <button class="tablinks" onclick="openTab(event, 'taste')">맛집촌</button>
-                    <button class="tablinks" onclick="openTab(event, 'locate')">위치기반</button>
-                </div>
-
-
-                <div class="tabcontent" id="area">
-                    <ul class="tab-container">
-                        <li class="tab-container__item active" data-tab="tab1">
-                            <a class="tab-container__item--title" href="#">서울</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab2">
-                            <a class="tab-container__item--title" href="#">경기</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab3">
-                            <a class="tab-container__item--title" href="#">인천</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab4">
-                            <a class="tab-container__item--title" href="#">대전</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab5">
-                            <a class="tab-container__item--title" href="#">대구</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab6">
-                            <a class="tab-container__item--title" href="#">울산</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab7">
-                            <a class="tab-container__item--title" href="#">부산</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab8">
-                            <a class="tab-container__item--title" href="#">강원</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab9">
-                            <a class="tab-container__item--title" href="#">충북</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab10">
-                            <a class="tab-container__item--title" href="#">충남</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab11">
-                            <a class="tab-container__item--title" href="#">전북</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab12">
-                            <a class="tab-container__item--title" href="#">전남</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab13">
-                            <a class="tab-container__item--title" href="#">경북</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab14">
-                            <a class="tab-container__item--title" href="#">경남</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab15">
-                            <a class="tab-container__item--title" href="#">제주</a>
-                        </li>
-                        <li class="tab-container__item" data-tab="tab16">
-                            <a class="tab-container__item--title" href="#">세종</a>
-                        </li>
-                    </ul>
-
-                    <ul class="content-container">
-                        <li id="tab1" class="content-container__content target">
-                            <ul class="sub_menu">
-                                <li>강남구(367)</li>
-                                <li>강동구(22)</li>
-                                <li>강북구(14)</li>
-                                <li>강서구(17)</li>
-                                <li>관악구(30)</li>
-                                <li>광진구(31)</li>
-                                <li>구로구(12)</li>
-                                <li>금전구(11)</li>
-                                <li>노원구(11)</li>
-                                <li>도봉구(11)</li>
-                                <li>동대문구(37)</li>
-                                <li>동작구(18)</li>
-                                <li>마포구(209)</li>
-                                <li>서대문구(69)</li>
-                                <li>서초구(110)</li>
-                                <li>성동구(42)</li>
-                                <li>성북구(46)</li>
-                                <li>송파구(50)</li>
-                                <li>양천구(21)</li>
-                                <li>영등포구(85)</li>
-                                <li>용산구(160)</li>
-                                <li>은평구(20)</li>
-                                <li>종로구(178)</li>
-                                <li>중구(197)</li>
-                                <li>중량구(11)</li>
-                            </ul>
-                        </li>
-                        <li id="tab2" class="content-container__content">
-                            <ul class="sub_menu">
-                                <li>강남구(367)</li>
-                                <li>강동구(22)</li>
-                                <li>강북구(14)</li>
-                                <li>강서구(17)</li>
-                                <li>관악구(30)</li>
-                                <li>광진구(31)</li>
-                                <li>구로구(12)</li>
-                                <li>금전구(11)</li>
-                                <li>노원구(11)</li>
-                                <li>도봉구(11)</li>
-                                <li>동대문구(37)</li>
-                                <li>동작구(18)</li>
-                                <li>마포구(209)</li>
-                                <li>서대문구(69)</li>
-                                <li>서초구(110)</li>
-                                <li>성동구(42)</li>
-                                <li>성북구(46)</li>
-                                <li>송파구(50)</li>
-                                <li>양천구(21)</li>
-                                <li>영등포구(85)</li>
-                                <li>용산구(160)</li>
-                                <li>은평구(20)</li>
-                                <li>종로구(178)</li>
-                                <li>중구(197)</li>
-                                <li>중량구(11)</li>
-                            </ul>
-                        </li>
-                        <li id="tab3" class="content-container__content">
-                            <ul class="sub_menu">
-                                <li>강남구(367)</li>
-                                <li>강동구(22)</li>
-                                <li>강북구(14)</li>
-                                <li>강서구(17)</li>
-                                <li>관악구(30)</li>
-                                <li>광진구(31)</li>
-                                <li>구로구(12)</li>
-                                <li>금전구(11)</li>
-                                <li>노원구(11)</li>
-                                <li>도봉구(11)</li>
-                                <li>동대문구(37)</li>
-                                <li>동작구(18)</li>
-                                <li>마포구(209)</li>
-                                <li>서대문구(69)</li>
-                                <li>서초구(110)</li>
-                                <li>성동구(42)</li>
-                                <li>성북구(46)</li>
-                                <li>송파구(50)</li>
-                                <li>양천구(21)</li>
-                                <li>영등포구(85)</li>
-                                <li>용산구(160)</li>
-                                <li>은평구(20)</li>
-                                <li>종로구(178)</li>
-                                <li>중구(197)</li>
-                                <li>중량구(11)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="tabcontent" id="city">
+        </div> -->
+    
+                <!-- 역세권 -->
+                <!-- <div class="tabcontent" id="city">
                     <ul class="tab-container">
                         <li class="tab-container__item active" data-tab="tab17">
                             <a class="tab-container__item--title" href="#">서울</a>
@@ -257,7 +2363,7 @@
                             <a class="tab-container__item--title" href="#">세종</a>
                         </li>
                     </ul>
-
+    
                     <ul class="content-container">
                         <li id="tab17" class="content-container__content target">
                             <ul class="sub_menu">
@@ -347,9 +2453,10 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
-
-                <div class="tabcontent" id="taste">
+                </div> -->
+    
+                <!-- 맛집촌 -->
+                <!-- <div class="tabcontent" id="taste">
                     <<ul class="tab-container">
                         <li class="tab-container__item active" data-tab="tab20">
                             <a class="tab-container__item--title" href="#">서울</a>
@@ -364,7 +2471,7 @@
                             <a class="tab-container__item--title" href="#">대전</a>
                         </li>
                         </ul>
-
+    
                         <ul class="content-container">
                             <li id="tab20" class="content-container__content target">
                                 <ul class="sub_menu">
@@ -483,9 +2590,11 @@
                                 </ul>
                             </li>
                         </ul>
-                </div>
-
-                <div class="tabcontent" id="locate">
+                </div> -->
+    
+    
+                <!-- 위치기반 -->
+                <!-- <div class="tabcontent" id="locate">
                     <ul class="tab-container">
                         <li class="tab-container__item active" data-tab="tab24">
                             <a class="tab-container__item--title" href="#">서울</a>
@@ -503,7 +2612,7 @@
                             <a class="tab-container__item--title" href="#">대구</a>
                         </li>
                     </ul>
-
+    
                     <ul class="content-container">
                         <li id="tab24" class="content-container__content target">
                             <ul class="sub_menu">
@@ -651,13 +2760,12 @@
                             </ul>
                         </li>
                     </ul>
+                </div> -->
+    
                 </div>
-
             </div>
-
-
-        </div>
     </header>
+
     <div class="top_bg restaurant_week"></div>
 
     <div class="restaruat_alert">
