@@ -51,9 +51,14 @@
                             </a>
                         </li>
                         <li class="pc_display">
-                            <a href="javascript:void(0);" >
-                                <img src="./img/fi_more-vertical.png" alt="more">
-                            </a>
+                            <img id="more_btn" src="./img/fi_more-vertical.png" alt="more">
+                            <div id="more_content" class="mobile_more_pop">
+                                <ul class="flex">
+                                    <li>로그인</li>
+                                    <li>식당주 알림</li>
+                                </ul>
+
+                            </div>
                         </li>
                     </ul>
                 </li>
@@ -3087,6 +3092,16 @@
             // 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
             popupbtn.addEventListener('click', () => {
                 popup.classList.toggle('active');
+            });
+
+
+              // When your page loads
+            const morebtn = document.querySelector('#more_btn');
+            const morePop = document.querySelector('#more_content');
+
+            // 반응형 웹 햄버거 메뉴 클릭 시 메뉴 펼침, 숨김 처리
+            morebtn.addEventListener('click', () => {
+                morePop.classList.toggle('active');
             });
 
     </script>

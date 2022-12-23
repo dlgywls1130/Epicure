@@ -252,7 +252,7 @@ header {
 }
 
 .navbar_right li {
-    margin-right: 2.5rem;
+    margin-right: 1rem;
 }
 
 .logo_positon{
@@ -263,7 +263,7 @@ header {
 }
 
 .navbar_right li:first-child{
-    margin-right: 0;
+    margin-right: 1rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -347,7 +347,7 @@ header {
 #menu .tab-container {
     display: flex;
     border-bottom: 1px solid #3E3729;
-    margin: 20px 10px 0;
+    margin: 31px 10px 0;
     padding-bottom: 8px;
     width: 100%;
     max-width: none;
@@ -482,7 +482,7 @@ position: relative;
 }
 
 .menu.tabs {
-    max-width: 1450px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -4947,7 +4947,7 @@ input[type=checkbox]:hover {
 
 .restaurant_detail_wrapp {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 15px!important;
     align-items: flex-start;
 }
 
@@ -5173,10 +5173,9 @@ input[type=checkbox]:hover {
 
 .menu_slide {
     width: 100%;
-    height: 638px;
+    height: 652px;
     background: #25282C;
     margin: 30px 0 20px;
-
 
 }
 
@@ -5497,7 +5496,7 @@ input[type=checkbox]:hover {
 
 .menu_list_price {
     display: flex;
-    padding: 25px 76px;
+    padding: 13px 76px;
 }
 
 .menu_list_price_title {
@@ -5672,9 +5671,50 @@ font-size: 15px;
     display: block; 
 }
 
+#more_content{
+    display: none;
+position: absolute;
+right: 0;
+}
+
+#more_content.active{
+    display: block;
+    z-index: 2;
+}
+
+.mobile_more_pop ul{
+    flex-direction: column;
+}
+.mobile_more_pop ul li{
+    width: 152px;
+    height: 44px;
+    background: #262728;
+    font-size: 14px;
+    color: #C99034;
+border: 1px solid #C99034;
+padding: 14px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.mobile_more_pop ul li:last-child{
+    margin-left: 0!important;
+}
+
+.pc_display img{
+    width: 24px!important;
+}
+
+.btn.btn-default{
+    width: 24px!important;
+}
+
+
 .input-group{
     display: flex;
     align-items: center;
+    margin-right: 0.5rem;
 }
 
 .input-group input{
