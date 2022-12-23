@@ -4510,6 +4510,16 @@
             filterButton.addEventListener('click', () => {
                 filterBox.classList.toggle('active');
             });
+
+
+            var selector = '.card_title';
+
+                $(selector).on('click', function(){
+                    $(selector).removeClass('active');
+                    $(this).addClass('active');
+                });
+
+
     </script>
 </body>
 

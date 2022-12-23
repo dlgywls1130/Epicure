@@ -11,9 +11,11 @@
 
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
 
     <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     
@@ -49,7 +51,7 @@
                             <img src="../img/detail4.png">
                         </button>
                         <div class="aside_btn_wrap">
-                            <button class="side_btn">
+                            <button class="side_btn" data-bs-toggle="modal" href="#exampleModalToggle11" role="button">
                                 <img src="../img/detail5.png">
                                 <p>오류신고</p>
                             </button>
@@ -380,6 +382,28 @@
 
 
     </div>
+
+        <!-- 오류신고하기 -->
+        <div class="modal fade " id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabe4" tabindex="-1">
+            <div class="modal-dialog  modal-dialog-centered mypage_list_popup">
+                <div class="modal-content">
+                    <div class="modal-body">
+    
+                        <div class="list_detail_head">
+                            오류 신고하기
+                        </div>
+                        <div class="list_detail_input">
+                            <textarea type="text" placeholder="내용 작성하기"></textarea>
+                        </div>
+    
+                        <div class="modal_btn list_detail_footer flex">
+                            <div class="close" data-bs-dismiss="modal">취소하기</div>
+                            <div class="delete-button">오류 신고하기</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

@@ -196,6 +196,11 @@ input[type=checkbox]:before {
     cursor: pointer;
 }
 
+p{
+margin-top: 0;
+margin-bottom: 0!important;
+}
+
 
 /* 임의의 영역 생성 */
 
@@ -238,18 +243,40 @@ header {
     border-image: linear-gradient(90deg, rgba(38, 39, 40, 1) 0%, rgba(38, 39, 40, 1) 25%, rgba(255, 200, 112, 1) 50%, rgba(38, 39, 40, 1) 75%, rgba(38, 39, 40, 1) 100%);
     border-image-slice: 1;
     margin: 0;
+    position: relative;
 }
 
 .navbar_right {
     display: flex;
+    align-items: center;
 }
 
 .navbar_right li {
     margin-right: 2.5rem;
 }
 
+.logo_positon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.navbar_right li:first-child{
+    margin-right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+
 .navbar_right li:last-child {
     margin-right: 0;
+}
+
+.input-group-addon{
+        margin: 0 2rem 0 1rem;
 }
 
 
@@ -447,6 +474,7 @@ position: relative;
 
 #toggle-button {
     cursor: pointer;
+    margin-left: 3rem;
 }
 
 .menu {
@@ -2165,7 +2193,7 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     display: flex;
     justify-content: space-between;
     padding: 7px 17px;
-
+    cursor: pointer;
 }
 
 
@@ -2655,7 +2683,7 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
 .favorite img {
-    width: 19px;
+    width: 20px;
     margin-right: 6px;
 }
 
@@ -2664,6 +2692,9 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     margin-right: 6px;
 }
 
+.favorite p{
+    line-height: 1px;
+}
 
 
 .week_filter .redlist .redlist_img {
@@ -3031,7 +3062,7 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     background: #FFFFFF;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
     border-radius: 2px;
-    padding: 10px 32px;
+    /* padding: 10px 32px; */
     font-family: 'Pretendard', sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -3182,7 +3213,6 @@ input[type=checkbox]:hover {
 
 .category_submit {
     background-color: #6C6C6C;
-
     width: 100%;
     height: 65px;
     font-family: 'Pretendard', sans-serif;
@@ -3192,6 +3222,7 @@ input[type=checkbox]:hover {
     line-height: 22px;
     text-align: center;
     color: #393939;
+    padding: 0;
 }
 
 .category_submit:focus {
@@ -5453,7 +5484,7 @@ input[type=checkbox]:hover {
     opacity: 0.5;
     position: absolute;
     position: absolute;
-    bottom: 0.7rem;
+    bottom: 0.5rem;
     left: 0.7rem;
 }
 
@@ -5579,6 +5610,89 @@ input[type=checkbox]:hover {
 
 .list_restaurant_wrap.length.mobile_red_list{
     display: none;
+}
+
+
+/* 디테일 오류팝업 */
+
+.list_detail_head{
+    font-family: 'Pretendard',sans-serif;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+color: #262626;
+padding: 32px 26px 13px;
+border-bottom: 2px solid #C99034;
+}
+
+.list_detail_input{
+padding: 26px 22px;
+}
+
+.list_detail_input textarea{
+    width: 100%;
+    height: 314px;
+    resize: none;
+    padding: 10px 14px;
+}
+
+.modal-dialog-centered.mypage_list_popup{
+    width: 758px!important;
+height: 515px!important;
+}
+
+.modal_btn.list_detail_footer{
+    margin: 0 auto 25px;
+}
+
+.modal_btn.list_detail_footer .close{
+    background: #F7F7F7;
+border-radius: 1px;
+color: #929292;
+font-weight: 700;
+font-size: 15px;
+}
+
+.modal_btn.list_detail_footer .delete-button{
+    background: #E6E6E6;
+    border-radius: 1px;
+    color: #7E7E7E;
+    font-weight: 700;
+font-size: 15px;
+}
+
+
+
+
+/* search bar */
+
+#search-form { display: none; }
+
+#search-form.active{
+    display: block; 
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+}
+
+.input-group input{
+width: 210px;
+height: 34px;
+background: #262728;
+border: 1px solid #C99034;
+box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+border-radius: 1px;
+}
+
+.navbar-form input{
+    color:#fff;
+}
+
+.form-group input::placeholder{
+    font-size: 14px;
+color: #585858;
 }
 
 /* mediaquery */
@@ -5904,7 +6018,7 @@ input[type=checkbox]:hover {
     .footer_menu {
         font-size: 16px;
         flex-wrap: wrap;
-        margin-top: 10px;
+        margin-top: 64px;
     }
 
     .footer_menu li {
@@ -5999,6 +6113,7 @@ input[type=checkbox]:hover {
     .filter_body .redlist {
         margin-right: 18px;
         max-height: 222px;
+        margin-bottom: 1rem;
     }
 
     .filter_body .redlist:nth-child(2n) {
@@ -6021,6 +6136,7 @@ input[type=checkbox]:hover {
 
     .green_list_title_flex {
         padding: 0 8px;
+        margin-bottom: 1rem;
     }
 
     .filter_group p {
@@ -6155,6 +6271,10 @@ input[type=checkbox]:hover {
 
     .button_etc {
         right: 10px;
+    }
+
+    .button_etc img:first-child{
+        display: none;
     }
 
     .area_filter_container {
@@ -6500,7 +6620,7 @@ input[type=checkbox]:hover {
     }
 
     .category_modal.situation {
-        width: 365px;
+        width: 349px;
         height: 403px;
         z-index: 12;
         background: url(../img/pop_bg4.png) no-repeat;
@@ -6697,6 +6817,42 @@ input[type=checkbox]:hover {
         width: 100%;
     }
 
+    .modal-dialog.modal-dialog-centered.mypage_list_popup{
+        width: 100%!important;
+    padding: 0 20px!important;
+    margin:0!important;
+    }
+
+    .modal_btn.list_detail_footer{
+        padding: 0 22px;
+    }
+
+    .package_check:first-child{
+        padding-right: 0;
+    }
+
+    #toggle-button{
+        margin-left: 0.5rem;
+    }
+
+    .logo_positon{
+        left: 6rem;
+    }
+
+    .navbar_right{
+        position: relative;
+    }
+
+    .input-group input{
+        position: absolute;
+    top: 50%;
+    left: -132%;
+    transform: translate(-50%,-50%);
+    }
+
+    .navbar-form.navbar-left .btn{
+        width: 0;
+    }
 }
 
 
@@ -6714,8 +6870,8 @@ input[type=checkbox]:hover {
         width: 100%;
         border-right: 0;
         border-bottom: 1px solid #C99034;
-        padding: 10px;
-        justify-content: center;
+        padding: 10px 3px;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -6755,6 +6911,7 @@ input[type=checkbox]:hover {
 
     .tabcontent_wrap {
         width: 100%;
+        overflow: hidden;
     }
 
     .tabcontent {
