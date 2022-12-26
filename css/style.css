@@ -282,6 +282,9 @@ header {
 
 /* 메뉴 */
 
+.nav{
+    display: block!important;
+}
 .menu {
     position: relative;
 }
@@ -341,6 +344,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 0;
 }
 
 
@@ -392,6 +396,10 @@ header {
     font-family: 'Pretendard';
     margin: 0;
 
+}
+
+#menu .tab-container li:first-child{
+    padding-left: 1rem;
 }
 
 
@@ -5694,7 +5702,7 @@ justify-content: center;
 }
 
 .btn.btn-default{
-    width: 24px!important;
+    width: 40px!important;
 }
 
 
@@ -6947,7 +6955,7 @@ color: #585858;
     }
 
     #menu .tab-container {
-        width: 100%;
+        width: 98%;
         justify-content: flex-start;
     }
 
