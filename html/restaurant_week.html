@@ -19,40 +19,56 @@
 <body>
     <header>
         <!-- navbar -->
-            <nav id="navbar">
-                <ul class="navbar">
-                    <li id="toggle-button">
-                        <img src="../img/menu.png" alt="menu">
-                    </li>
-                    <li>
-                        <img src="../img/logo.png" alt="logo">
-                    </li>
-                    <li>
-                        <ul class="navbar_right">
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../img/search.png" alt="search">
-                                </a>
-                            </li>
-                            <li class="mobile_display">
-                                <a href="javascript:void(0);">
-                                    <img src="../img/login.png" alt="login">
-                                </a>
-                            </li>
-                            <li class="mobile_display">
-                                <a href="javascript:void(0);">
-                                    <img src="../img/notice.png" alt="notice">
-                                </a>
-                            </li>
-                            <li class="pc_display">
-                                <a href="javascript:void(0);" >
-                                    <img src="../img/fi_more-vertical.png" alt="more">
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <nav id="navbar">
+            <ul class="navbar">
+                <li id="toggle-button">
+                    <img src="../img/menu.png" alt="menu">
+                </li>
+                <li class="logo_positon">
+                    <img src="../img/logo.png" alt="logo">
+                </li>
+                <li>
+                    <ul class="navbar_right">
+                        <li class="header_alarm" style="display: none;">
+                            <a href="javascript:void(0);">
+                                <img src="../img/alarm_header.png">
+                            </a>
+                        </li>
+                        <li class="search_icon">
+                            <button id='search-button' class='btn btn-default '>
+                                <img src="../img/search.png" alt="search">
+                            </button>
+                            <div id='search-form' class="form-group">
+                                <div class="input-group_header">
+                                    
+                                    <input type="text" class="form-control" placeholder="키워드를 검색해보세요.">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mobile_display">
+                            <a href="javascript:void(0);">
+                                <img src="../img/login.png" alt="login">
+                            </a>
+                        </li>
+                        <li class="mobile_display">
+                            <a href="javascript:void(0);">
+                                <img src="../img/notice.png" alt="notice">
+                            </a>
+                        </li>
+                        <li class="pc_display">
+                            <img id="more_btn" src="../img/fi_more-vertical.png" alt="more">
+                            <div id="more_content" class="mobile_more_pop">
+                                <ul class="flex">
+                                    <li>로그인</li>
+                                    <li>식당주 알림</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     
                     <!-- menu -->
             <div class="menu tabs" id="menu">
@@ -2786,10 +2802,10 @@
                     <button type="button" class="close side" data-bs-dismiss="modal">
                         <img src="../img/modal_x.png">
                     </button>
-                    <div class="scroll_btn">
+                    <!-- <div class="scroll_btn">
                         <img src="../img/up_scroll.png" class="up_scroll">
                         <img src="../img/down_scroll.png">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

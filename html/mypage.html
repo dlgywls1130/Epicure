@@ -27,15 +27,26 @@
                 <li id="toggle-button">
                     <img src="../img/menu.png" alt="menu">
                 </li>
-                <li>
+                <li class="logo_positon">
                     <img src="../img/logo.png" alt="logo">
                 </li>
                 <li>
                     <ul class="navbar_right">
-                        <li>
+                        <li class="header_alarm" style="display: none;">
                             <a href="javascript:void(0);">
-                                <img src="../img/search.png" alt="search">
+                                <img src="../img/alarm_header.png">
                             </a>
+                        </li>
+                        <li class="search_icon">
+                            <button id='search-button' class='btn btn-default '>
+                                <img src="../img/search.png" alt="search">
+                            </button>
+                            <div id='search-form' class="form-group">
+                                <div class="input-group_header">
+                                    
+                                    <input type="text" class="form-control" placeholder="키워드를 검색해보세요.">
+                                </div>
+                            </div>
                         </li>
                         <li class="mobile_display">
                             <a href="javascript:void(0);">
@@ -48,9 +59,14 @@
                             </a>
                         </li>
                         <li class="pc_display">
-                            <a href="javascript:void(0);" >
-                                <img src="../img/fi_more-vertical.png" alt="more">
-                            </a>
+                            <img id="more_btn" src="../img/fi_more-vertical.png" alt="more">
+                            <div id="more_content" class="mobile_more_pop">
+                                <ul class="flex">
+                                    <li>로그인</li>
+                                    <li>식당주 알림</li>
+                                </ul>
+
+                            </div>
                         </li>
                     </ul>
                 </li>
