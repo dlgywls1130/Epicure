@@ -2236,7 +2236,9 @@
                 
                 <li class="tab-container__item tab_bookmark" data-tab="tab205">
                     <a class="tab-container__item--title bookmark" href="#">
-                        <img src="../img/fi_bookmark.png">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 18L7 13L0 18V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H12C12.5304 0 13.0391 0.210714 13.4142 0.585786C13.7893 0.960859 14 1.46957 14 2V18Z" fill="#C99034"/>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -2269,15 +2271,15 @@
                                     <ul class="membership">
                                         <li class="name">예약</li>
                                         <li class="input_answer button_wrap">
-                                            <button type="button" class="active">예약가능</button>
-                                            <button type="button">예약 불가능</button>
+                                            <button type="button" class="button_on_off button_on1 active">예약가능</button>
+                                            <button type="button" class="button_on_off button_on1">예약 불가능</button>
                                         </li>
                                     </ul>
                                     <ul class="membership">
                                         <li class="name">주차장</li>
                                         <li class="input_answer button_wrap">
-                                            <button type="button" class="active">주차 가능</button>
-                                            <button type="button">주차 불가능</button>
+                                            <button type="button" class="button_on_off button_on2 active">주차 가능</button>
+                                            <button type="button" class="button_on_off button_on2">주차 불가능</button>
                                         </li>
                                     </ul>
                                     <ul class="membership">
@@ -2290,12 +2292,12 @@
                                         <li class="name">포장배달</li>
                                         <li class="input_answer button_wrap">
                                             <div class="package_check flex ">
-                                                <button type="button"  class="active">포장 가능</button>
-                                                <button type="button">포장 불가능</button>
+                                                <button type="button"  class="button_on_off button_on3 active">포장 가능</button>
+                                                <button type="button" class="button_on_off button_on3">포장 불가능</button>
                                             </div>
                                             <div class="package_check flex ">
-                                                <button type="button" class="active">배달 가능</button>
-                                                <button type="button">배달 불가능</button>
+                                                <button type="button" class="button_on_off button_on4 active">배달 가능</button>
+                                                <button type="button" class="button_on_off button_on4">배달 불가능</button>
                                             </div>
 
                                         </li>
@@ -3956,6 +3958,35 @@
 
                 $(selector).on('click', function(){
                     $(selector).removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                
+            var btonOnOff = '.button_on1 ';
+
+            $(btonOnOff).on('click', function(){
+                $(btonOnOff).removeClass('active');
+                $(this).addClass('active');
+            });
+
+            var btonOnOff1 = '.button_on2 ';
+
+                $(btonOnOff1).on('click', function(){
+                    $(btonOnOff1).removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                var btonOnOff2 = '.button_on3 ';
+
+                $(btonOnOff2).on('click', function(){
+                    $(btonOnOff2).removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                var btonOnOff3 = '.button_on4 ';
+
+                $(btonOnOff3).on('click', function(){
+                    $(btonOnOff3).removeClass('active');
                     $(this).addClass('active');
                 });
 
